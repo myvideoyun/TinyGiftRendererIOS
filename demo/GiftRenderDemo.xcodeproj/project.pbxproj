@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2300F3BE23A362B800A49B43 /* huacao in Resources */ = {isa = PBXBuildFile; fileRef = 2300F3BD23A362B800A49B43 /* huacao */; };
 		239501E821C4A7A6006FF051 /* fjkt in Resources */ = {isa = PBXBuildFile; fileRef = 239501E721C4A7A6006FF051 /* fjkt */; };
 		23F8610B21C6A9E7006E8478 /* GiftRenderKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23F8610821C6A9DB006E8478 /* GiftRenderKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D3AE5C6B1FF34C7D004D476B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */; };
@@ -23,6 +24,8 @@
 			isa = PBXBuildRule;
 			compilerSpec = com.apple.compilers.proxy.script;
 			fileType = pattern.proxy;
+			inputFiles = (
+			);
 			isEditable = 1;
 			outputFiles = (
 			);
@@ -69,6 +72,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2300F3BD23A362B800A49B43 /* huacao */ = {isa = PBXFileReference; lastKnownFileType = folder; path = huacao; sourceTree = "<group>"; };
 		239501E721C4A7A6006FF051 /* fjkt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fjkt; sourceTree = "<group>"; };
 		23F8610221C6A9DB006E8478 /* GiftRenderKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GiftRenderKit.xcodeproj; path = ../GiftRenderKit.xcodeproj; sourceTree = "<group>"; };
 		D3AE5C661FF34C7C004D476B /* GiftRenderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftRenderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +131,7 @@
 		D3AE5C681FF34C7C004D476B /* GiftRenderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2300F3BD23A362B800A49B43 /* huacao */,
 				239501E721C4A7A6006FF051 /* fjkt */,
 				D3AE5C691FF34C7D004D476B /* AppDelegate.h */,
 				D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */,
@@ -236,6 +241,7 @@
 				D3AE5C731FF34C7D004D476B /* Assets.xcassets in Resources */,
 				D3AE5C711FF34C7D004D476B /* Main.storyboard in Resources */,
 				239501E821C4A7A6006FF051 /* fjkt in Resources */,
+				2300F3BE23A362B800A49B43 /* huacao in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

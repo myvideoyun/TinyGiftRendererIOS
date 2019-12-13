@@ -74,7 +74,7 @@
     if (!_animHandler) {
         //初始化AiyaAnimEffect
         _animHandler = [[GiftRenderWrapper alloc] init];
-        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"fjkt"];
+        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"huacao"];
         self.animHandler.effectPlayCount = 2;
     }
     
