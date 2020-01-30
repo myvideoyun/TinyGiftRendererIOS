@@ -21,7 +21,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifyMessage:) name:RenderNotification object:nil];
     
-    [SDKAuthTool requestAuth:@"NkkOmEE7rb5haWEHWjLTrrlf0fgEdU7eiVCnS0JHhlYpVMhljTSC00MxS4xFTArR" auth_length:48];
+    [SDKAuthTool requestAuth:@"jAwdRWLiAhQN3lJ2zfJv7blf0fgEdU7eiVCnS0JHhlYpVMhljTSC00MxS4xFTArR" auth_length:64];
     
     // add blue view
     UIView *v = [[UIView alloc] initWithFrame:self.view.bounds];
@@ -74,13 +74,13 @@
     if (!_animHandler) {
         //初始化AiyaAnimEffect
         _animHandler = [[GiftRenderWrapper alloc] init];
-        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"huacao"];
+        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"fjkt"];
         self.animHandler.effectPlayCount = 2;
     }
     
     //清空画布
     glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);  
     
     [self.animHandler processWithWidth:(int)glkView.drawableWidth height:(int)glkView.drawableHeight];
 
