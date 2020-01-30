@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2367B61323B203350012B3FA /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C21FCE5C1D00A00D12 /* libavcodec.a */; };
+		2367B61423B203350012B3FA /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C11FCE5C1D00A00D12 /* libavfilter.a */; };
+		2367B61523B203350012B3FA /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C31FCE5C1D00A00D12 /* libavformat.a */; };
+		2367B61623B203350012B3FA /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C01FCE5C1D00A00D12 /* libavutil.a */; };
+		2367B61723B203350012B3FA /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C51FCE5C1D00A00D12 /* libswresample.a */; };
+		2367B61823B203350012B3FA /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C61FCE5C1D00A00D12 /* libswscale.a */; };
+		236F992A23B212AC00248574 /* libdav1d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 236F992923B212AC00248574 /* libdav1d.a */; };
 		239501E521C49E2F006FF051 /* TinyGiftRenderAuth.mm in Sources */ = {isa = PBXBuildFile; fileRef = 239501E121C49E2E006FF051 /* TinyGiftRenderAuth.mm */; };
-		D343879F1FFC822700C331FD /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C21FCE5C1D00A00D12 /* libavcodec.a */; };
 		D36926B41FCE527E00A00D12 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926A91FCE4F7100A00D12 /* libc++.tbd */; };
 		D36926BE1FCE5B6100A00D12 /* libgiftrender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926BD1FCE5B6100A00D12 /* libgiftrender.a */; };
-		D36926C71FCE5C1D00A00D12 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C01FCE5C1D00A00D12 /* libavutil.a */; };
-		D36926C81FCE5C1D00A00D12 /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C11FCE5C1D00A00D12 /* libavfilter.a */; };
-		D36926CA1FCE5C1D00A00D12 /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C31FCE5C1D00A00D12 /* libavformat.a */; };
-		D36926CB1FCE5C1D00A00D12 /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C41FCE5C1D00A00D12 /* libavdevice.a */; };
-		D36926CC1FCE5C1D00A00D12 /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C51FCE5C1D00A00D12 /* libswresample.a */; };
-		D36926CD1FCE5C1D00A00D12 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C61FCE5C1D00A00D12 /* libswscale.a */; };
 		D36926E81FCEBEAE00A00D12 /* SDKAuthTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D36926E61FCEBEAE00A00D12 /* SDKAuthTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D36926E91FCEBEAE00A00D12 /* SDKAuthTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D36926E71FCEBEAE00A00D12 /* SDKAuthTool.m */; };
 		D36926F31FCEC9BB00A00D12 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926F21FCEC9BB00A00D12 /* libz.tbd */; };
@@ -56,6 +56,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		236F992723B2122B00248574 /* libdav1d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdav1d.a; path = "../aos-dav1d-android-builder/build-ios-arm64/lib/libdav1d.a"; sourceTree = "<group>"; };
+		236F992923B212AC00248574 /* libdav1d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdav1d.a; path = GiftRenderLib/FFmpeg/libdav1d.a; sourceTree = "<group>"; };
 		239501E121C49E2E006FF051 /* TinyGiftRenderAuth.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TinyGiftRenderAuth.mm; sourceTree = "<group>"; };
 		239501E321C49E2E006FF051 /* TinyGiftRenderAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyGiftRenderAuth.h; sourceTree = "<group>"; };
 		D36926A91FCE4F7100A00D12 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
@@ -100,14 +102,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D36926C81FCE5C1D00A00D12 /* libavfilter.a in Frameworks */,
-				D36926C71FCE5C1D00A00D12 /* libavutil.a in Frameworks */,
+				236F992A23B212AC00248574 /* libdav1d.a in Frameworks */,
+				2367B61323B203350012B3FA /* libavcodec.a in Frameworks */,
+				2367B61423B203350012B3FA /* libavfilter.a in Frameworks */,
+				2367B61523B203350012B3FA /* libavformat.a in Frameworks */,
+				2367B61623B203350012B3FA /* libavutil.a in Frameworks */,
+				2367B61723B203350012B3FA /* libswresample.a in Frameworks */,
+				2367B61823B203350012B3FA /* libswscale.a in Frameworks */,
 				D36926BE1FCE5B6100A00D12 /* libgiftrender.a in Frameworks */,
-				D36926CA1FCE5C1D00A00D12 /* libavformat.a in Frameworks */,
-				D36926CD1FCE5C1D00A00D12 /* libswscale.a in Frameworks */,
-				D36926CB1FCE5C1D00A00D12 /* libavdevice.a in Frameworks */,
-				D36926CC1FCE5C1D00A00D12 /* libswresample.a in Frameworks */,
-				D343879F1FFC822700C331FD /* libavcodec.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +119,8 @@
 		D36926A81FCE4F7100A00D12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				236F992723B2122B00248574 /* libdav1d.a */,
+				236F992923B212AC00248574 /* libdav1d.a */,
 				D3F391541FD2AC11009274DE /* OpenAL.framework */,
 				D36926F41FCEC9DA00A00D12 /* libiconv.tbd */,
 				D36926F21FCEC9BB00A00D12 /* libz.tbd */,

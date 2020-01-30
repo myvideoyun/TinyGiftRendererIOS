@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2300F3BE23A362B800A49B43 /* huacao in Resources */ = {isa = PBXBuildFile; fileRef = 2300F3BD23A362B800A49B43 /* huacao */; };
 		239501E821C4A7A6006FF051 /* fjkt in Resources */ = {isa = PBXBuildFile; fileRef = 239501E721C4A7A6006FF051 /* fjkt */; };
+		23ACF65523B9679F005AAC4C /* xiaohonghua in Resources */ = {isa = PBXBuildFile; fileRef = 23ACF65423B9679F005AAC4C /* xiaohonghua */; };
 		23F8610B21C6A9E7006E8478 /* GiftRenderKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23F8610821C6A9DB006E8478 /* GiftRenderKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D3AE5C6B1FF34C7D004D476B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */; };
 		D3AE5C6E1FF34C7D004D476B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C6D1FF34C7D004D476B /* ViewController.m */; };
@@ -74,6 +75,7 @@
 /* Begin PBXFileReference section */
 		2300F3BD23A362B800A49B43 /* huacao */ = {isa = PBXFileReference; lastKnownFileType = folder; path = huacao; sourceTree = "<group>"; };
 		239501E721C4A7A6006FF051 /* fjkt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fjkt; sourceTree = "<group>"; };
+		23ACF65423B9679F005AAC4C /* xiaohonghua */ = {isa = PBXFileReference; lastKnownFileType = folder; path = xiaohonghua; sourceTree = "<group>"; };
 		23F8610221C6A9DB006E8478 /* GiftRenderKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GiftRenderKit.xcodeproj; path = ../GiftRenderKit.xcodeproj; sourceTree = "<group>"; };
 		D3AE5C661FF34C7C004D476B /* GiftRenderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftRenderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AE5C691FF34C7D004D476B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 		D3AE5C681FF34C7C004D476B /* GiftRenderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				23ACF65423B9679F005AAC4C /* xiaohonghua */,
 				2300F3BD23A362B800A49B43 /* huacao */,
 				239501E721C4A7A6006FF051 /* fjkt */,
 				D3AE5C691FF34C7D004D476B /* AppDelegate.h */,
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23ACF65523B9679F005AAC4C /* xiaohonghua in Resources */,
 				D3AE5C731FF34C7D004D476B /* Assets.xcassets in Resources */,
 				D3AE5C711FF34C7D004D476B /* Main.storyboard in Resources */,
 				239501E821C4A7A6006FF051 /* fjkt in Resources */,
