@@ -3,15 +3,36 @@
 #include "Constants.h"
 #import "render_api.h"
 
-void funcAyEffectMessage(int type, int ret, const char *info) {
-    [[NSNotificationCenter defaultCenter]
-            postNotificationName:RenderNotification
-                          object:nil
-                        userInfo:@{ RenderUserInfo : [NSString stringWithUTF8String:info] }];
-}
+/**
+ * 特效播放中
+ */
+int MSG_STAT_EFFECTS_PLAY = 0x00020000;
+
+/**
+ * 特效播放结束
+ */
+int MSG_STAT_EFFECTS_END = 0x00040000;
+
+/**
+ * 特效播放开始
+ */
+int MSG_STAT_EFFECTS_START = 0x00080000;
+
+class AyEffectCallBack
+{
+public:
+    TinyGiftRender *ayEffect;
+
+    void effectMessage(int type, int ret, const char *info){
+        if (ayEffect.delegate) {
+            [ayEffect.delegate effectMessageWithType:type ret:ret];
+        }
+    }
+};
 
 @interface TinyGiftRender () {
     void* render;
+    AyEffectCallBack effectCallBack;
 
     BOOL updateEffectPath;
     BOOL updateVFlip;
@@ -20,11 +41,22 @@ void funcAyEffectMessage(int type, int ret, const char *info) {
 
 @implementation TinyGiftRender
 
++ (void)initLicense:(NSString *)appKey key_length:(int)key_length{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
+        renderer_auth(std::string([bundleIdentifier UTF8String]),
+                          std::string(appKey.UTF8String), "", key_length, NULL);
+    });
+}
+
 - (void)initGLResource {
-    render = renderer_create(1);
+    effectCallBack.ayEffect = self;
+    render = renderer_create(0);
     MsgCallback cb;
-    cb.callback = funcAyEffectMessage;
+    cb.callback = std::bind(&AyEffectCallBack::effectMessage, &effectCallBack, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3);
     renderer_setParam(render, "MsgFunction", (void*)&cb);
+    updateVFlip = false;
 }
 
 - (void)releaseGLtContext {
@@ -35,6 +67,10 @@ void funcAyEffectMessage(int type, int ret, const char *info) {
     _effectPath = effectPath;
 
     updateEffectPath = YES;
+}
+
+- (void)setFaceData:(void *)faceData{
+    // TODO: implement
 }
 
 - (void)setEnalbeVFilp:(BOOL)enalbeVFilp {
@@ -50,8 +86,6 @@ void funcAyEffectMessage(int type, int ret, const char *info) {
 
         updateEffectPath = NO;
     }
-
-    renderer_setParam(render, "FaceData", NULL);
 
     if (updateVFlip) {
         int enable = self.enalbeVFilp;

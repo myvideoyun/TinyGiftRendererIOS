@@ -3,7 +3,18 @@
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 
+
+@protocol AYAnimHandlerDelegate <NSObject>
+
+/**
+ 播放结束
+ */
+- (void)playEnd;
+
+@end
 @interface GiftRenderWrapper : NSObject
+
+@property (nonatomic, weak) id<AYAnimHandlerDelegate> delegate;
 
 /**
  设置礼物,通过设置特效文件路径的方式,默认空值,空值表示取消渲染特效

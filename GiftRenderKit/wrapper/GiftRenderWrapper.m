@@ -1,7 +1,7 @@
 #import "GiftRenderWrapper.h"
 #import "TinyGiftRender.h"
 
-@interface GiftRenderWrapper ()
+@interface GiftRenderWrapper () <AyEffectDelegate>
 @property(nonatomic, strong) TinyGiftRender *effect;
 
 @property(nonatomic, assign) NSInteger currentPlayCount;
@@ -14,9 +14,8 @@
     if (self) {
         _effect = [[TinyGiftRender alloc] init];
         [self.effect initGLResource];
-        self.effect.enalbeVFilp = YES;
-
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notifyMessage:) name:RenderNotification object:nil];
+        self.effect.enalbeVFilp = NO;
+        self.effect.delegate = self;
     }
     return self;
 }
@@ -42,20 +41,21 @@
     self.currentPlayCount = 0;
 }
 
-- (void)notifyMessage:(NSNotification *)notifi {
-    NSString *message = notifi.userInfo[RenderUserInfo];
-
-    if (!self.effectPath || [self.effectPath isEqualToString:@""]) {
-
-    } else if ([@"TINYGIFT_END" isEqualToString:message]) { //已经渲染完成一遍
-        self.currentPlayCount++;
-        if (self.effectPlayCount != 0 && self.currentPlayCount >= self.effectPlayCount) {
-            [self setEffectPath:@""];
-            [[NSNotificationCenter defaultCenter] postNotificationName:RenderNotification object:nil userInfo:@{ RenderUserInfo : @"TINYGIFT_REPLAY_END" }];
-        }
-    } else if (self.effectPlayCount != 0 && self.currentPlayCount >= self.effectPlayCount) { //已经播放完成
+- (void)effectMessageWithType:(NSInteger)type ret:(NSInteger)ret {
+    
+    if (!self.effectPath || [self.effectPath isEqualToString:@""]){
+        
+    }else if (ret == MSG_STAT_EFFECTS_END || ret < 0) {//已经渲染完成一遍
+        self.currentPlayCount ++;
         [self setEffectPath:@""];
-        [[NSNotificationCenter defaultCenter] postNotificationName:RenderNotification object:nil userInfo:@{ RenderUserInfo : @"TINYGIFT_REPLAY_END" }];
+        if (self.delegate) {
+            [self.delegate playEnd];
+        }
+    }else if (self.effectPlayCount != 0 && self.currentPlayCount >= self.effectPlayCount) {//已经播放完成
+        [self setEffectPath:@""];
+        if (self.delegate) {
+            [self.delegate playEnd];
+        }
     }
 }
 
