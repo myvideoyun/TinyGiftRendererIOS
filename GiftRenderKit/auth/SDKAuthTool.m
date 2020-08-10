@@ -1,5 +1,5 @@
 #import "SDKAuthTool.h"
-#import "TinyGiftRenderAuth.h"
+#import "../GiftRenderLib/TinyGiftRenderAuth.h"
 
 @implementation SDKAuthTool
 
