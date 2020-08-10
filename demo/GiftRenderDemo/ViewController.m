@@ -49,7 +49,7 @@
     
     // add button
     button = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width / 2 - 50, self.view.bounds.size.height - 100, 100, 50)];
-    [button setTitle:@"play" forState:UIControlStateNormal];
+    [button setTitle:@"stop" forState:UIControlStateNormal];
     [button setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
     [button setBackgroundColor:UIColor.grayColor];
     [button addTarget:self action:@selector(onButtonClick:) forControlEvents:UIControlEventTouchUpInside];

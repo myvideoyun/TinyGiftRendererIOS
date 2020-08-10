@@ -7,68 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2367B61323B203350012B3FA /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C21FCE5C1D00A00D12 /* libavcodec.a */; };
-		2367B61423B203350012B3FA /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C11FCE5C1D00A00D12 /* libavfilter.a */; };
-		2367B61523B203350012B3FA /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C31FCE5C1D00A00D12 /* libavformat.a */; };
-		2367B61623B203350012B3FA /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C01FCE5C1D00A00D12 /* libavutil.a */; };
-		2367B61723B203350012B3FA /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C51FCE5C1D00A00D12 /* libswresample.a */; };
-		2367B61823B203350012B3FA /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926C61FCE5C1D00A00D12 /* libswscale.a */; };
-		236F992A23B212AC00248574 /* libdav1d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 236F992923B212AC00248574 /* libdav1d.a */; };
-		239501E521C49E2F006FF051 /* TinyGiftRenderAuth.mm in Sources */ = {isa = PBXBuildFile; fileRef = 239501E121C49E2E006FF051 /* TinyGiftRenderAuth.mm */; };
 		D36926B41FCE527E00A00D12 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926A91FCE4F7100A00D12 /* libc++.tbd */; };
-		D36926BE1FCE5B6100A00D12 /* libgiftrender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926BD1FCE5B6100A00D12 /* libgiftrender.a */; };
 		D36926E81FCEBEAE00A00D12 /* SDKAuthTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D36926E61FCEBEAE00A00D12 /* SDKAuthTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D36926E91FCEBEAE00A00D12 /* SDKAuthTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D36926E71FCEBEAE00A00D12 /* SDKAuthTool.m */; };
 		D36926F31FCEC9BB00A00D12 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926F21FCEC9BB00A00D12 /* libz.tbd */; };
 		D36926F51FCEC9DA00A00D12 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926F41FCEC9DA00A00D12 /* libiconv.tbd */; };
 		D36927161FCED7AD00A00D12 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = D36927151FCED7AD00A00D12 /* Constants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D37926EF1FCD081A007DB5E8 /* GiftRenderKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D37926ED1FCD081A007DB5E8 /* GiftRenderKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D37927171FCD08AA007DB5E8 /* TinyGiftRender.mm in Sources */ = {isa = PBXBuildFile; fileRef = D37927161FCD08AA007DB5E8 /* TinyGiftRender.mm */; };
-		D37927181FCD08AA007DB5E8 /* TinyGiftRender.h in Copy Files */ = {isa = PBXBuildFile; fileRef = D37927151FCD08AA007DB5E8 /* TinyGiftRender.h */; };
+		D390964224E18B1C006D507B /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963424E18B1C006D507B /* libavutil.a */; };
+		D390964324E18B1C006D507B /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963524E18B1C006D507B /* libavfilter.a */; };
+		D390964424E18B1C006D507B /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963624E18B1C006D507B /* libavcodec.a */; };
+		D390964524E18B1C006D507B /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963724E18B1C006D507B /* libavformat.a */; };
+		D390964624E18B1C006D507B /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963824E18B1C006D507B /* libavdevice.a */; };
+		D390964724E18B1C006D507B /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963924E18B1C006D507B /* libswresample.a */; };
+		D390964824E18B1C006D507B /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963A24E18B1C006D507B /* libswscale.a */; };
+		D390964924E18B1C006D507B /* libdav1d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963B24E18B1C006D507B /* libdav1d.a */; };
+		D390964A24E18B1C006D507B /* TinyGiftRenderAuth.mm in Sources */ = {isa = PBXBuildFile; fileRef = D390963C24E18B1C006D507B /* TinyGiftRenderAuth.mm */; };
+		D390964B24E18B1C006D507B /* libgiftrender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963D24E18B1C006D507B /* libgiftrender.a */; };
+		D390964C24E18B1D006D507B /* render_api.h in Headers */ = {isa = PBXBuildFile; fileRef = D390963E24E18B1C006D507B /* render_api.h */; };
+		D390964D24E18B1D006D507B /* TinyGiftRender.mm in Sources */ = {isa = PBXBuildFile; fileRef = D390963F24E18B1C006D507B /* TinyGiftRender.mm */; };
+		D390964E24E18B1D006D507B /* TinyGiftRenderAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = D390964024E18B1C006D507B /* TinyGiftRenderAuth.h */; };
+		D390964F24E18B1D006D507B /* TinyGiftRender.h in Headers */ = {isa = PBXBuildFile; fileRef = D390964124E18B1C006D507B /* TinyGiftRender.h */; };
 		D393AE911FD3A2A200DA7EB5 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = D393AE901FD3A2A200DA7EB5 /* Constants.m */; };
 		D3AE5C811FF34D3F004D476B /* GiftRenderWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D3AE5C7F1FF34D3F004D476B /* GiftRenderWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D3AE5C821FF34D3F004D476B /* GiftRenderWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C801FF34D3F004D476B /* GiftRenderWrapper.m */; };
-		D3E7FDA620C59115009D1A7D /* libGiftRenderLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D37927131FCD08AA007DB5E8 /* libGiftRenderLib.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D3E7FD9E20C590FE009D1A7D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D37926E11FCD081A007DB5E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D37927121FCD08AA007DB5E8;
-			remoteInfo = AyEffect;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		D37927111FCD08AA007DB5E8 /* Copy Files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				D37927181FCD08AA007DB5E8 /* TinyGiftRender.h in Copy Files */,
-			);
-			name = "Copy Files";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		236F992723B2122B00248574 /* libdav1d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdav1d.a; path = "../aos-dav1d-android-builder/build-ios-arm64/lib/libdav1d.a"; sourceTree = "<group>"; };
 		236F992923B212AC00248574 /* libdav1d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdav1d.a; path = GiftRenderLib/FFmpeg/libdav1d.a; sourceTree = "<group>"; };
-		239501E121C49E2E006FF051 /* TinyGiftRenderAuth.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TinyGiftRenderAuth.mm; sourceTree = "<group>"; };
-		239501E321C49E2E006FF051 /* TinyGiftRenderAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyGiftRenderAuth.h; sourceTree = "<group>"; };
 		D36926A91FCE4F7100A00D12 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		D36926BD1FCE5B6100A00D12 /* libgiftrender.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgiftrender.a; sourceTree = "<group>"; };
-		D36926C01FCE5C1D00A00D12 /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
-		D36926C11FCE5C1D00A00D12 /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavfilter.a; sourceTree = "<group>"; };
-		D36926C21FCE5C1D00A00D12 /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
-		D36926C31FCE5C1D00A00D12 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
-		D36926C41FCE5C1D00A00D12 /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavdevice.a; sourceTree = "<group>"; };
-		D36926C51FCE5C1D00A00D12 /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
-		D36926C61FCE5C1D00A00D12 /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
 		D36926E61FCEBEAE00A00D12 /* SDKAuthTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKAuthTool.h; sourceTree = "<group>"; };
 		D36926E71FCEBEAE00A00D12 /* SDKAuthTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKAuthTool.m; sourceTree = "<group>"; };
 		D36926F21FCEC9BB00A00D12 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -77,9 +45,20 @@
 		D37926EA1FCD081A007DB5E8 /* GiftRenderKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GiftRenderKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D37926ED1FCD081A007DB5E8 /* GiftRenderKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GiftRenderKit.h; sourceTree = "<group>"; };
 		D37926EE1FCD081A007DB5E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D37927131FCD08AA007DB5E8 /* libGiftRenderLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGiftRenderLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D37927151FCD08AA007DB5E8 /* TinyGiftRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TinyGiftRender.h; sourceTree = "<group>"; };
-		D37927161FCD08AA007DB5E8 /* TinyGiftRender.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = TinyGiftRender.mm; sourceTree = "<group>"; };
+		D390963424E18B1C006D507B /* libavutil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavutil.a; sourceTree = "<group>"; };
+		D390963524E18B1C006D507B /* libavfilter.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavfilter.a; sourceTree = "<group>"; };
+		D390963624E18B1C006D507B /* libavcodec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavcodec.a; sourceTree = "<group>"; };
+		D390963724E18B1C006D507B /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavformat.a; sourceTree = "<group>"; };
+		D390963824E18B1C006D507B /* libavdevice.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libavdevice.a; sourceTree = "<group>"; };
+		D390963924E18B1C006D507B /* libswresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswresample.a; sourceTree = "<group>"; };
+		D390963A24E18B1C006D507B /* libswscale.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libswscale.a; sourceTree = "<group>"; };
+		D390963B24E18B1C006D507B /* libdav1d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libdav1d.a; sourceTree = "<group>"; };
+		D390963C24E18B1C006D507B /* TinyGiftRenderAuth.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TinyGiftRenderAuth.mm; sourceTree = "<group>"; };
+		D390963D24E18B1C006D507B /* libgiftrender.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libgiftrender.a; sourceTree = "<group>"; };
+		D390963E24E18B1C006D507B /* render_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render_api.h; sourceTree = "<group>"; };
+		D390963F24E18B1C006D507B /* TinyGiftRender.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TinyGiftRender.mm; sourceTree = "<group>"; };
+		D390964024E18B1C006D507B /* TinyGiftRenderAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyGiftRenderAuth.h; sourceTree = "<group>"; };
+		D390964124E18B1C006D507B /* TinyGiftRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyGiftRender.h; sourceTree = "<group>"; };
 		D393AE901FD3A2A200DA7EB5 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		D3AE5C7F1FF34D3F004D476B /* GiftRenderWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GiftRenderWrapper.h; sourceTree = "<group>"; };
 		D3AE5C801FF34D3F004D476B /* GiftRenderWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiftRenderWrapper.m; sourceTree = "<group>"; };
@@ -91,25 +70,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3E7FDA620C59115009D1A7D /* libGiftRenderLib.a in Frameworks */,
 				D36926B41FCE527E00A00D12 /* libc++.tbd in Frameworks */,
+				D390964724E18B1C006D507B /* libswresample.a in Frameworks */,
+				D390964324E18B1C006D507B /* libavfilter.a in Frameworks */,
+				D390964624E18B1C006D507B /* libavdevice.a in Frameworks */,
+				D390964524E18B1C006D507B /* libavformat.a in Frameworks */,
 				D36926F31FCEC9BB00A00D12 /* libz.tbd in Frameworks */,
+				D390964824E18B1C006D507B /* libswscale.a in Frameworks */,
+				D390964B24E18B1C006D507B /* libgiftrender.a in Frameworks */,
+				D390964224E18B1C006D507B /* libavutil.a in Frameworks */,
 				D36926F51FCEC9DA00A00D12 /* libiconv.tbd in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D37927101FCD08AA007DB5E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				236F992A23B212AC00248574 /* libdav1d.a in Frameworks */,
-				2367B61323B203350012B3FA /* libavcodec.a in Frameworks */,
-				2367B61423B203350012B3FA /* libavfilter.a in Frameworks */,
-				2367B61523B203350012B3FA /* libavformat.a in Frameworks */,
-				2367B61623B203350012B3FA /* libavutil.a in Frameworks */,
-				2367B61723B203350012B3FA /* libswresample.a in Frameworks */,
-				2367B61823B203350012B3FA /* libswscale.a in Frameworks */,
-				D36926BE1FCE5B6100A00D12 /* libgiftrender.a in Frameworks */,
+				D390964424E18B1C006D507B /* libavcodec.a in Frameworks */,
+				D390964924E18B1C006D507B /* libdav1d.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,20 +110,6 @@
 			path = auth;
 			sourceTree = "<group>";
 		};
-		D36926BF1FCE5C1D00A00D12 /* FFmpeg */ = {
-			isa = PBXGroup;
-			children = (
-				D36926C01FCE5C1D00A00D12 /* libavutil.a */,
-				D36926C11FCE5C1D00A00D12 /* libavfilter.a */,
-				D36926C21FCE5C1D00A00D12 /* libavcodec.a */,
-				D36926C31FCE5C1D00A00D12 /* libavformat.a */,
-				D36926C41FCE5C1D00A00D12 /* libavdevice.a */,
-				D36926C51FCE5C1D00A00D12 /* libswresample.a */,
-				D36926C61FCE5C1D00A00D12 /* libswscale.a */,
-			);
-			path = FFmpeg;
-			sourceTree = "<group>";
-		};
 		D36926D71FCEAD3300A00D12 /* wrapper */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				D37926EC1FCD081A007DB5E8 /* GiftRenderKit */,
-				D37927141FCD08AA007DB5E8 /* GiftRenderLib */,
 				D37926EB1FCD081A007DB5E8 /* Products */,
 				D36926A81FCE4F7100A00D12 /* Frameworks */,
 			);
@@ -175,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				D37926EA1FCD081A007DB5E8 /* GiftRenderKit.framework */,
-				D37927131FCD08AA007DB5E8 /* libGiftRenderLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +139,7 @@
 		D37926EC1FCD081A007DB5E8 /* GiftRenderKit */ = {
 			isa = PBXGroup;
 			children = (
+				D390963224E18B1C006D507B /* GiftRenderLib */,
 				D36926D71FCEAD3300A00D12 /* wrapper */,
 				D36926AF1FCE513500A00D12 /* auth */,
 				D37926ED1FCD081A007DB5E8 /* GiftRenderKit.h */,
@@ -193,17 +150,33 @@
 			path = GiftRenderKit;
 			sourceTree = "<group>";
 		};
-		D37927141FCD08AA007DB5E8 /* GiftRenderLib */ = {
+		D390963224E18B1C006D507B /* GiftRenderLib */ = {
 			isa = PBXGroup;
 			children = (
-				239501E321C49E2E006FF051 /* TinyGiftRenderAuth.h */,
-				239501E121C49E2E006FF051 /* TinyGiftRenderAuth.mm */,
-				D37927151FCD08AA007DB5E8 /* TinyGiftRender.h */,
-				D37927161FCD08AA007DB5E8 /* TinyGiftRender.mm */,
-				D36926BF1FCE5C1D00A00D12 /* FFmpeg */,
-				D36926BD1FCE5B6100A00D12 /* libgiftrender.a */,
+				D390963324E18B1C006D507B /* FFmpeg */,
+				D390963C24E18B1C006D507B /* TinyGiftRenderAuth.mm */,
+				D390963D24E18B1C006D507B /* libgiftrender.a */,
+				D390963E24E18B1C006D507B /* render_api.h */,
+				D390963F24E18B1C006D507B /* TinyGiftRender.mm */,
+				D390964024E18B1C006D507B /* TinyGiftRenderAuth.h */,
+				D390964124E18B1C006D507B /* TinyGiftRender.h */,
 			);
 			path = GiftRenderLib;
+			sourceTree = "<group>";
+		};
+		D390963324E18B1C006D507B /* FFmpeg */ = {
+			isa = PBXGroup;
+			children = (
+				D390963424E18B1C006D507B /* libavutil.a */,
+				D390963524E18B1C006D507B /* libavfilter.a */,
+				D390963624E18B1C006D507B /* libavcodec.a */,
+				D390963724E18B1C006D507B /* libavformat.a */,
+				D390963824E18B1C006D507B /* libavdevice.a */,
+				D390963924E18B1C006D507B /* libswresample.a */,
+				D390963A24E18B1C006D507B /* libswscale.a */,
+				D390963B24E18B1C006D507B /* libdav1d.a */,
+			);
+			path = FFmpeg;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3AE5C811FF34D3F004D476B /* GiftRenderWrapper.h in Headers */,
+				D390964C24E18B1D006D507B /* render_api.h in Headers */,
 				D36926E81FCEBEAE00A00D12 /* SDKAuthTool.h in Headers */,
 				D36927161FCED7AD00A00D12 /* Constants.h in Headers */,
+				D390964F24E18B1D006D507B /* TinyGiftRender.h in Headers */,
+				D390964E24E18B1D006D507B /* TinyGiftRenderAuth.h in Headers */,
 				D37926EF1FCD081A007DB5E8 /* GiftRenderKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,29 +211,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				D3E7FD9F20C590FE009D1A7D /* PBXTargetDependency */,
 			);
 			name = GiftRenderKit;
 			productName = AiyaEffectSDK;
 			productReference = D37926EA1FCD081A007DB5E8 /* GiftRenderKit.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		D37927121FCD08AA007DB5E8 /* GiftRenderLib */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D37927191FCD08AA007DB5E8 /* Build configuration list for PBXNativeTarget "GiftRenderLib" */;
-			buildPhases = (
-				D379270F1FCD08AA007DB5E8 /* Sources */,
-				D37927101FCD08AA007DB5E8 /* Frameworks */,
-				D37927111FCD08AA007DB5E8 /* Copy Files */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GiftRenderLib;
-			productName = AyEffect;
-			productReference = D37927131FCD08AA007DB5E8 /* libGiftRenderLib.a */;
-			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -269,10 +227,6 @@
 				ORGANIZATIONNAME = "深圳市哎吖科技有限公司";
 				TargetAttributes = {
 					D37926E91FCD081A007DB5E8 = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
-					D37927121FCD08AA007DB5E8 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -291,7 +245,6 @@
 			projectRoot = "";
 			targets = (
 				D37926E91FCD081A007DB5E8 /* GiftRenderKit */,
-				D37927121FCD08AA007DB5E8 /* GiftRenderLib */,
 			);
 		};
 /* End PBXProject section */
@@ -311,30 +264,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D390964D24E18B1D006D507B /* TinyGiftRender.mm in Sources */,
 				D36926E91FCEBEAE00A00D12 /* SDKAuthTool.m in Sources */,
+				D390964A24E18B1C006D507B /* TinyGiftRenderAuth.mm in Sources */,
 				D393AE911FD3A2A200DA7EB5 /* Constants.m in Sources */,
 				D3AE5C821FF34D3F004D476B /* GiftRenderWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D379270F1FCD08AA007DB5E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				239501E521C49E2F006FF051 /* TinyGiftRenderAuth.mm in Sources */,
-				D37927171FCD08AA007DB5E8 /* TinyGiftRender.mm in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D3E7FD9F20C590FE009D1A7D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D37927121FCD08AA007DB5E8 /* GiftRenderLib */;
-			targetProxy = D3E7FD9E20C590FE009D1A7D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D37926F01FCD081A007DB5E8 /* Debug */ = {
@@ -461,7 +399,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = XF7HNQXZKK;
+				DEVELOPMENT_TEAM = 67GM9ZTA2J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -470,6 +408,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/GiftRenderKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/GiftRenderKit/GiftRenderLib/FFmpeg\"",
+					"\"$(SRCROOT)/GiftRenderKit/GiftRenderLib\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.GiftRenderKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -483,7 +426,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = XF7HNQXZKK;
+				DEVELOPMENT_TEAM = 67GM9ZTA2J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -492,44 +435,15 @@
 				INFOPLIST_FILE = "$(SRCROOT)/GiftRenderKit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/GiftRenderKit/GiftRenderLib/FFmpeg\"",
+					"\"$(SRCROOT)/GiftRenderKit/GiftRenderLib\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.GiftRenderKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
-		};
-		D379271A1FCD08AA007DB5E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/GiftRenderLib",
-					"$(PROJECT_DIR)/GiftRenderLib/FFmpeg",
-					"$(PROJECT_DIR)/GiftRenderLib/thirdLibs",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = GiftRenderLib;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		D379271B1FCD08AA007DB5E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/GiftRenderLib",
-					"$(PROJECT_DIR)/GiftRenderLib/FFmpeg",
-					"$(PROJECT_DIR)/GiftRenderLib/thirdLibs",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = GiftRenderLib;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -550,15 +464,6 @@
 			buildConfigurations = (
 				D37926F31FCD081A007DB5E8 /* Debug */,
 				D37926F41FCD081A007DB5E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D37927191FCD08AA007DB5E8 /* Build configuration list for PBXNativeTarget "GiftRenderLib" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D379271A1FCD08AA007DB5E8 /* Debug */,
-				D379271B1FCD08AA007DB5E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
