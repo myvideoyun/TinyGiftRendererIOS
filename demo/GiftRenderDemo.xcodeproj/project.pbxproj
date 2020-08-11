@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2300F3BE23A362B800A49B43 /* huacao in Resources */ = {isa = PBXBuildFile; fileRef = 2300F3BD23A362B800A49B43 /* huacao */; };
-		239501E821C4A7A6006FF051 /* fjkt in Resources */ = {isa = PBXBuildFile; fileRef = 239501E721C4A7A6006FF051 /* fjkt */; };
-		23ACF65523B9679F005AAC4C /* xiaohonghua in Resources */ = {isa = PBXBuildFile; fileRef = 23ACF65423B9679F005AAC4C /* xiaohonghua */; };
+		23C8D2BE24DFAF3300179F86 /* aixinmeigui_v1 in Resources */ = {isa = PBXBuildFile; fileRef = 23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */; };
 		23F8610B21C6A9E7006E8478 /* GiftRenderKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23F8610821C6A9DB006E8478 /* GiftRenderKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D3AE5C6B1FF34C7D004D476B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */; };
 		D3AE5C6E1FF34C7D004D476B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C6D1FF34C7D004D476B /* ViewController.m */; };
@@ -42,13 +40,6 @@
 			remoteGlobalIDString = D37926EA1FCD081A007DB5E8;
 			remoteInfo = GiftRenderKit;
 		};
-		23F8610921C6A9DB006E8478 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 23F8610221C6A9DB006E8478 /* GiftRenderKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D37927131FCD08AA007DB5E8;
-			remoteInfo = GiftRenderLib;
-		};
 		23F8610C21C6A9EE006E8478 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 23F8610221C6A9DB006E8478 /* GiftRenderKit.xcodeproj */;
@@ -73,9 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2300F3BD23A362B800A49B43 /* huacao */ = {isa = PBXFileReference; lastKnownFileType = folder; path = huacao; sourceTree = "<group>"; };
-		239501E721C4A7A6006FF051 /* fjkt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fjkt; sourceTree = "<group>"; };
-		23ACF65423B9679F005AAC4C /* xiaohonghua */ = {isa = PBXFileReference; lastKnownFileType = folder; path = xiaohonghua; sourceTree = "<group>"; };
+		23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aixinmeigui_v1; sourceTree = "<group>"; };
 		23F8610221C6A9DB006E8478 /* GiftRenderKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GiftRenderKit.xcodeproj; path = ../GiftRenderKit.xcodeproj; sourceTree = "<group>"; };
 		D3AE5C661FF34C7C004D476B /* GiftRenderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftRenderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AE5C691FF34C7D004D476B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				23F8610821C6A9DB006E8478 /* GiftRenderKit.framework */,
-				23F8610A21C6A9DB006E8478 /* libGiftRenderLib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,9 +121,7 @@
 		D3AE5C681FF34C7C004D476B /* GiftRenderDemo */ = {
 			isa = PBXGroup;
 			children = (
-				23ACF65423B9679F005AAC4C /* xiaohonghua */,
-				2300F3BD23A362B800A49B43 /* huacao */,
-				239501E721C4A7A6006FF051 /* fjkt */,
+				23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */,
 				D3AE5C691FF34C7D004D476B /* AppDelegate.h */,
 				D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */,
 				D3AE5C6C1FF34C7D004D476B /* ViewController.h */,
@@ -227,13 +213,6 @@
 			remoteRef = 23F8610721C6A9DB006E8478 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		23F8610A21C6A9DB006E8478 /* libGiftRenderLib.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libGiftRenderLib.a;
-			remoteRef = 23F8610921C6A9DB006E8478 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -241,11 +220,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23ACF65523B9679F005AAC4C /* xiaohonghua in Resources */,
 				D3AE5C731FF34C7D004D476B /* Assets.xcassets in Resources */,
 				D3AE5C711FF34C7D004D476B /* Main.storyboard in Resources */,
-				239501E821C4A7A6006FF051 /* fjkt in Resources */,
-				2300F3BE23A362B800A49B43 /* huacao in Resources */,
+				23C8D2BE24DFAF3300179F86 /* aixinmeigui_v1 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +377,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.GiftRenderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -416,7 +393,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.GiftRenderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
