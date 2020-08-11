@@ -104,8 +104,6 @@
 		D36926AF1FCE513500A00D12 /* auth */ = {
 			isa = PBXGroup;
 			children = (
-				D36926E61FCEBEAE00A00D12 /* SDKAuthTool.h */,
-				D36926E71FCEBEAE00A00D12 /* SDKAuthTool.m */,
 			);
 			path = auth;
 			sourceTree = "<group>";
@@ -113,8 +111,6 @@
 		D36926D71FCEAD3300A00D12 /* wrapper */ = {
 			isa = PBXGroup;
 			children = (
-				D3AE5C7F1FF34D3F004D476B /* GiftRenderWrapper.h */,
-				D3AE5C801FF34D3F004D476B /* GiftRenderWrapper.m */,
 			);
 			path = wrapper;
 			sourceTree = "<group>";
@@ -139,6 +135,10 @@
 		D37926EC1FCD081A007DB5E8 /* GiftRenderKit */ = {
 			isa = PBXGroup;
 			children = (
+				D36926E61FCEBEAE00A00D12 /* SDKAuthTool.h */,
+				D36926E71FCEBEAE00A00D12 /* SDKAuthTool.m */,
+				D3AE5C7F1FF34D3F004D476B /* GiftRenderWrapper.h */,
+				D3AE5C801FF34D3F004D476B /* GiftRenderWrapper.m */,
 				D390963224E18B1C006D507B /* GiftRenderLib */,
 				D36926D71FCEAD3300A00D12 /* wrapper */,
 				D36926AF1FCE513500A00D12 /* auth */,

@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 
-#import <GiftRenderKit/Constants.h>
+#import "Constants.h"
 
-#import <GiftRenderKit/SDKAuthTool.h>
+#import "SDKAuthTool.h"
 
-#import <GiftRenderKit/GiftRenderWrapper.h>
+#import "GiftRenderWrapper.h"

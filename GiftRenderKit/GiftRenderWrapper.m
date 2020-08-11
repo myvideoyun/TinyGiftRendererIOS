@@ -1,5 +1,5 @@
 #import "GiftRenderWrapper.h"
-#import "../GiftRenderLib/TinyGiftRender.h"
+#import "TinyGiftRender.h"
 
 @interface GiftRenderWrapper () <AyEffectDelegate>
 @property(nonatomic, strong) TinyGiftRender *effect;
