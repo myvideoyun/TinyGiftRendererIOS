@@ -5,6 +5,7 @@ target 'GiftRenderDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'GiftRendererKit', :podspec => '../GiftRenderKit/GiftRendererKit.podspec'
+  # pod 'GiftRendererKit', :podspec => '../GiftRenderKit/GiftRendererKit.podspec'
+  pod 'GiftRendererKit',  '~> 1.0.0'
 
 end
