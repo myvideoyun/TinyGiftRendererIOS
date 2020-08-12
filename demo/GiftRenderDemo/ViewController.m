@@ -1,6 +1,6 @@
 #import "ViewController.h"
 #import <GLKit/GLKit.h>
-#import <GiftRenderKit/GiftRenderKit.h>
+#import "GiftRenderKit.h"
 
 @interface ViewController () <GLKViewDelegate, AYAnimHandlerDelegate>{
     GLKView *glkView;
