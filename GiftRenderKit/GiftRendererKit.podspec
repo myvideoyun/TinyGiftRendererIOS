@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.license      = "MIT"
   spec.author             = { "myvideoyun" => "developers@myvideoyun.com" }
   spec.platform     = :ios, "8.0"
-  spec.source       = { :git => "https://github.com/myvideoyun/TinyGiftRendererIOS.git", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/myvideoyun/TinyGiftRendererIOS.git", :tag => "1.0.01" }
   spec.source_files  = "GiftRenderKit", "GiftRenderKit/**/*.{h,m,mm}"
   spec.exclude_files = "GiftRenderKit/.DS_Store"
   spec.public_header_files = "GiftRenderKit/*.h"
