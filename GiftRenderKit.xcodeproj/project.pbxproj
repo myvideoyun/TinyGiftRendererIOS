@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D36926B41FCE527E00A00D12 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926A91FCE4F7100A00D12 /* libc++.tbd */; };
-		D36926E81FCEBEAE00A00D12 /* SDKAuthTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D36926E61FCEBEAE00A00D12 /* SDKAuthTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D36926E91FCEBEAE00A00D12 /* SDKAuthTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D36926E71FCEBEAE00A00D12 /* SDKAuthTool.m */; };
+		D36926E81FCEBEAE00A00D12 /* MVYSDKAuthTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D36926E61FCEBEAE00A00D12 /* MVYSDKAuthTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D36926E91FCEBEAE00A00D12 /* MVYSDKAuthTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D36926E71FCEBEAE00A00D12 /* MVYSDKAuthTool.m */; };
 		D36926F31FCEC9BB00A00D12 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926F21FCEC9BB00A00D12 /* libz.tbd */; };
 		D36926F51FCEC9DA00A00D12 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926F41FCEC9DA00A00D12 /* libiconv.tbd */; };
 		D36927161FCED7AD00A00D12 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = D36927151FCED7AD00A00D12 /* Constants.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,16 +29,16 @@
 		D390964E24E18B1D006D507B /* TinyGiftRenderAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = D390964024E18B1C006D507B /* TinyGiftRenderAuth.h */; };
 		D390964F24E18B1D006D507B /* TinyGiftRender.h in Headers */ = {isa = PBXBuildFile; fileRef = D390964124E18B1C006D507B /* TinyGiftRender.h */; };
 		D393AE911FD3A2A200DA7EB5 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = D393AE901FD3A2A200DA7EB5 /* Constants.m */; };
-		D3AE5C811FF34D3F004D476B /* GiftRenderWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D3AE5C7F1FF34D3F004D476B /* GiftRenderWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D3AE5C821FF34D3F004D476B /* GiftRenderWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C801FF34D3F004D476B /* GiftRenderWrapper.m */; };
+		D3AE5C811FF34D3F004D476B /* MVYGiftRenderWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = D3AE5C7F1FF34D3F004D476B /* MVYGiftRenderWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3AE5C821FF34D3F004D476B /* MVYGiftRenderWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C801FF34D3F004D476B /* MVYGiftRenderWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		236F992723B2122B00248574 /* libdav1d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdav1d.a; path = "../aos-dav1d-android-builder/build-ios-arm64/lib/libdav1d.a"; sourceTree = "<group>"; };
 		236F992923B212AC00248574 /* libdav1d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdav1d.a; path = GiftRenderLib/FFmpeg/libdav1d.a; sourceTree = "<group>"; };
 		D36926A91FCE4F7100A00D12 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		D36926E61FCEBEAE00A00D12 /* SDKAuthTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDKAuthTool.h; sourceTree = "<group>"; };
-		D36926E71FCEBEAE00A00D12 /* SDKAuthTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKAuthTool.m; sourceTree = "<group>"; };
+		D36926E61FCEBEAE00A00D12 /* MVYSDKAuthTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVYSDKAuthTool.h; sourceTree = "<group>"; };
+		D36926E71FCEBEAE00A00D12 /* MVYSDKAuthTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVYSDKAuthTool.m; sourceTree = "<group>"; };
 		D36926F21FCEC9BB00A00D12 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D36926F41FCEC9DA00A00D12 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		D36927151FCED7AD00A00D12 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
@@ -60,8 +60,8 @@
 		D390964024E18B1C006D507B /* TinyGiftRenderAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyGiftRenderAuth.h; sourceTree = "<group>"; };
 		D390964124E18B1C006D507B /* TinyGiftRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyGiftRender.h; sourceTree = "<group>"; };
 		D393AE901FD3A2A200DA7EB5 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
-		D3AE5C7F1FF34D3F004D476B /* GiftRenderWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GiftRenderWrapper.h; sourceTree = "<group>"; };
-		D3AE5C801FF34D3F004D476B /* GiftRenderWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GiftRenderWrapper.m; sourceTree = "<group>"; };
+		D3AE5C7F1FF34D3F004D476B /* MVYGiftRenderWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVYGiftRenderWrapper.h; sourceTree = "<group>"; };
+		D3AE5C801FF34D3F004D476B /* MVYGiftRenderWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVYGiftRenderWrapper.m; sourceTree = "<group>"; };
 		D3F391541FD2AC11009274DE /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -135,10 +135,10 @@
 		D37926EC1FCD081A007DB5E8 /* GiftRenderKit */ = {
 			isa = PBXGroup;
 			children = (
-				D36926E61FCEBEAE00A00D12 /* SDKAuthTool.h */,
-				D36926E71FCEBEAE00A00D12 /* SDKAuthTool.m */,
-				D3AE5C7F1FF34D3F004D476B /* GiftRenderWrapper.h */,
-				D3AE5C801FF34D3F004D476B /* GiftRenderWrapper.m */,
+				D36926E61FCEBEAE00A00D12 /* MVYSDKAuthTool.h */,
+				D36926E71FCEBEAE00A00D12 /* MVYSDKAuthTool.m */,
+				D3AE5C7F1FF34D3F004D476B /* MVYGiftRenderWrapper.h */,
+				D3AE5C801FF34D3F004D476B /* MVYGiftRenderWrapper.m */,
 				D390963224E18B1C006D507B /* GiftRenderLib */,
 				D36926D71FCEAD3300A00D12 /* wrapper */,
 				D36926AF1FCE513500A00D12 /* auth */,
@@ -186,9 +186,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3AE5C811FF34D3F004D476B /* GiftRenderWrapper.h in Headers */,
+				D3AE5C811FF34D3F004D476B /* MVYGiftRenderWrapper.h in Headers */,
 				D390964C24E18B1D006D507B /* render_api.h in Headers */,
-				D36926E81FCEBEAE00A00D12 /* SDKAuthTool.h in Headers */,
+				D36926E81FCEBEAE00A00D12 /* MVYSDKAuthTool.h in Headers */,
 				D36927161FCED7AD00A00D12 /* Constants.h in Headers */,
 				D390964F24E18B1D006D507B /* TinyGiftRender.h in Headers */,
 				D390964E24E18B1D006D507B /* TinyGiftRenderAuth.h in Headers */,
@@ -265,10 +265,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D390964D24E18B1D006D507B /* TinyGiftRender.mm in Sources */,
-				D36926E91FCEBEAE00A00D12 /* SDKAuthTool.m in Sources */,
+				D36926E91FCEBEAE00A00D12 /* MVYSDKAuthTool.m in Sources */,
 				D390964A24E18B1C006D507B /* TinyGiftRenderAuth.mm in Sources */,
 				D393AE911FD3A2A200DA7EB5 /* Constants.m in Sources */,
-				D3AE5C821FF34D3F004D476B /* GiftRenderWrapper.m in Sources */,
+				D3AE5C821FF34D3F004D476B /* MVYGiftRenderWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

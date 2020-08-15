@@ -27,8 +27,8 @@ extern int MSG_STAT_EFFECTS_START;
 
 @end
 
-extern NSString *const RenderNotification;
-extern NSString *const RenderUserInfo;
+extern NSString *const MVYGiftRenderNotification;
+extern NSString *const MVYGiftRenderUserInfo;
 
 @interface TinyGiftRender : NSObject
 

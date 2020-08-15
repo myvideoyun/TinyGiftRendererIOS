@@ -1,7 +1,7 @@
-#import "SDKAuthTool.h"
+#import "MVYSDKAuthTool.h"
 #import "TinyGiftRenderAuth.h"
 
-@implementation SDKAuthTool
+@implementation MVYSDKAuthTool
 
 + (void)requestAuth:(NSString *)appKey auth_length:(int)length{
     [TinyGiftRenderAuth requestAuth:appKey auth_length:length];

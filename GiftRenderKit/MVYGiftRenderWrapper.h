@@ -12,12 +12,12 @@
 - (void)playEnd;
 
 @end
-@interface GiftRenderWrapper : NSObject
+@interface MVYGiftRenderWrapper : NSObject
 
 @property (nonatomic, weak) id<AYAnimHandlerDelegate> delegate;
 
 /**
- 设置礼物,通过设置特效文件路径的方式,默认空值,空值表示取消渲染特效
+ set gift path
  */
 @property(nonatomic, strong) NSString *effectPath;
 
