@@ -37,8 +37,7 @@ int renderer_auth(JNIEnv *env, jobject obj, std::string appKey, int length);
 #else
 #define EXPORT
 // 0: ok; -1: fail;
-int renderer_auth(std::string appId, std::string appKey, std::string imei,
-                   int length);
+int renderer_auth(std::string appId, std::string appKey, int length);
 #endif
 
 EXPORT void *renderer_create(int vertical_flip);

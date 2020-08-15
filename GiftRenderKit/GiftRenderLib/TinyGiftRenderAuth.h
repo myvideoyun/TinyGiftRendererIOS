@@ -5,6 +5,6 @@ extern NSString *const AuthUserInfo;
 
 @interface TinyGiftRenderAuth : NSObject
 
-+ (void)requestAuth:(NSString *)appKey auth_length:(int)length;
++ (int)requestAuth:(NSString *)appKey auth_length:(int)length;
 
 @end

@@ -41,15 +41,6 @@ public:
 
 @implementation TinyGiftRender
 
-+ (void)initLicense:(NSString *)appKey key_length:(int)key_length{
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        NSString *bundleIdentifier = [[NSBundle mainBundle] bundleIdentifier];
-        renderer_auth(std::string([bundleIdentifier UTF8String]),
-                          std::string(appKey.UTF8String), "", key_length, NULL);
-    });
-}
-
 - (void)initGLResource {
     effectCallBack.ayEffect = self;
     render = renderer_create(0);

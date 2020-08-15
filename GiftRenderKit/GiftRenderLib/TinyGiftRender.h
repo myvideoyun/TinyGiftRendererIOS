@@ -32,8 +32,6 @@ extern NSString *const RenderUserInfo;
 
 @interface TinyGiftRender : NSObject
 
-+ (void)initLicense:(NSString *)appKey key_length:(int)key_length;
-
 @property (nonatomic, weak) id<AyEffectDelegate> delegate;
 
 /**
