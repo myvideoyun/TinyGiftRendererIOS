@@ -32,7 +32,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		236F992723B2122B00248574 /* libdav1d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdav1d.a; path = "../aos-dav1d-android-builder/build-ios-arm64/lib/libdav1d.a"; sourceTree = "<group>"; };
 		236F992923B212AC00248574 /* libdav1d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdav1d.a; path = GiftRenderLib/FFmpeg/libdav1d.a; sourceTree = "<group>"; };
 		D36926A91FCE4F7100A00D12 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		D36926E61FCEBEAE00A00D12 /* MVYSDKAuthTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVYSDKAuthTool.h; sourceTree = "<group>"; };
@@ -87,7 +86,6 @@
 		D36926A81FCE4F7100A00D12 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				236F992723B2122B00248574 /* libdav1d.a */,
 				236F992923B212AC00248574 /* libdav1d.a */,
 				D3F391541FD2AC11009274DE /* OpenAL.framework */,
 				D36926F41FCEC9DA00A00D12 /* libiconv.tbd */,
