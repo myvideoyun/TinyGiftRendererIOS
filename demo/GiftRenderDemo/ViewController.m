@@ -12,7 +12,7 @@
     Boolean isAppActive;
 }
 
-@property (nonatomic, strong) GiftRenderWrapper *animHandler;
+@property (nonatomic, strong) MVYGiftRenderWrapper *animHandler;
 
 @end
 
@@ -21,12 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // license state notification
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(licenseMessage:) name:AuthNotify object:nil];
-    
-    
-    [SDKAuthTool requestAuth:@"jAwdRWLiAhQN3lJ2zfJv7blf0fgEdU7eiVCnS0JHhlYpVMhljTSC00MxS4xFTArR" auth_length:64];
-    
+    int auth_ret = [MVYSDKAuthTool requestAuth:@"jAwdRWLiAhQN3lJ2zfJv7blf0fgEdU7eiVCnS0JHhlYpVMhljTSC00MxS4xFTArR" auth_length:64];
+    if (auth_ret == 0)
+        NSLog(@"Authenticate OK!");
+    else
+        NSLog(@"Authenticate FAIL");
     // add blue view
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     imageView.image = [UIImage imageNamed:@"girl"];
@@ -74,19 +73,6 @@
     }
 }
 
-- (void)licenseMessage:(NSNotification *)notifi{
-    
-    AuthResult result = [notifi.userInfo[AuthUserInfo] integerValue];
-    switch (result) {
-        case AuthSuccess:
-            NSLog(@"License 验证成功");
-            break;
-        case AuthFail:
-            NSLog(@"License 验证失败");
-            break;
-    }
-}
-
 - (void)didEnterBackground {
     [lock lock];
     self->isAppActive = false;
@@ -104,6 +90,7 @@
 - (void)playEnd {
     NSLog(@"多次播放完成");
     [displayLink invalidate];
+    _animHandler = nil;
 }
 
 #pragma mark CADisplayLink selector
@@ -123,7 +110,7 @@
     
     if (!_animHandler) {
         //初始化AiyaAnimEffect
-        _animHandler = [[GiftRenderWrapper alloc] init];
+        _animHandler = [[MVYGiftRenderWrapper alloc] init];
         self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"aixinmeigui_v1"];
         self.animHandler.effectPlayCount = 2;
         self.animHandler.delegate = self;
