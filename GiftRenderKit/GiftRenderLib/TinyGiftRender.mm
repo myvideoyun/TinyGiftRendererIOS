@@ -1,6 +1,5 @@
 #include <string>
 #import "TinyGiftRender.h"
-#include "Constants.h"
 #import "render_api.h"
 
 /**

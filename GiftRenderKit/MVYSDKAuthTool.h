@@ -2,6 +2,6 @@
 
 @interface MVYSDKAuthTool : NSObject
 
-+ (void)requestAuth:(NSString *)appKey auth_length:(int)length;
++ (int)requestAuth:(NSString *)appKey auth_length:(int)length;
 
 @end

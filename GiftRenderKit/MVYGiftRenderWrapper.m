@@ -1,6 +1,9 @@
 #import "MVYGiftRenderWrapper.h"
 #import "TinyGiftRender.h"
 
+NSString *const MVYGiftRenderNotification = @"GiftRenderNotification";
+NSString *const MVYGiftRenderUserInfo = @"GiftRenderResult";
+
 @interface MVYGiftRenderWrapper () <AyEffectDelegate>
 @property(nonatomic, strong) TinyGiftRender *effect;
 

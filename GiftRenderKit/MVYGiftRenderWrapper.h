@@ -3,6 +3,9 @@
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 
+extern NSString *const MVYGiftRenderNotification;
+extern NSString *const MVYGiftRenderUserInfo;
+
 
 @protocol AYAnimHandlerDelegate <NSObject>
 

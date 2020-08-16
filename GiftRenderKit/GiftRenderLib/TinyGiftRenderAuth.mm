@@ -1,5 +1,4 @@
 #import "TinyGiftRenderAuth.h"
-#include "Constants.h"
 #include "render_api.h"
 #include <string>
 #import <CoreFoundation/CoreFoundation.h>
