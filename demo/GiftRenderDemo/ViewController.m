@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    int auth_ret = [MVYSDKAuthTool requestAuth:@"jAwdRWLiAhQN3lJ2zfJv7blf0fgEdU7eiVCnS0JHhlYpVMhljTSC00MxS4xFTArR" auth_length:64];
+    int auth_ret = [MVYSDKAuthTool requestAuth:@"xgLeQ5G6YF0zLOBUH9GQerlf0fgEdU7eiVCnS0JHhlYpVMhljTSC00MxS4xFTArR" auth_length:64];
     if (auth_ret == 0)
         NSLog(@"Authenticate OK!");
     else
