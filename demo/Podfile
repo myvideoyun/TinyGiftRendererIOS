@@ -6,6 +6,6 @@ target 'GiftRenderDemo' do
   use_frameworks!
 
   # pod 'GiftRendererKit', :podspec => '../GiftRenderKit/GiftRendererKit.podspec'
-  pod 'GiftRendererKit',  '~> 1.0.06'
+  pod 'GiftRendererKit',  '~> 1.0.07'
 
 end
