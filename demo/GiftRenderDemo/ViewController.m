@@ -21,7 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    int auth_ret = [MVYSDKAuthTool requestAuth:@"xgLeQ5G6YF0zLOBUH9GQerlf0fgEdU7eiVCnS0JHhlYpVMhljTSC00MxS4xFTArR" auth_length:64];
+    int auth_ret = [MVYSDKAuthTool requestAuthEx:@"B7EkZE/J8ucIeYj9mcIytHLhKh9dOSh39hr2ALWHmiXOjj+sUxpNoEL4xlC/im9MK2aaCu6YLlikOlbOzXXEuUqjkufKAcjIVWLiLWmCx3qGjtYurdSmNzTO6NLXXeca8jK8iFOwbQe12FQqiaCb7g==" LicenseLength:112 Key:@"B5fWhjmEcav+GsFIh5tpyY9dLingLBM2jUOUZ+WnLY0CyXUsw+yrP2tn/Z9R/7bASFOmiq61l+yQUFqsv17wPg==" KeyLength:64];
+
     if (auth_ret == 0)
         NSLog(@"Authenticate OK!");
     else
