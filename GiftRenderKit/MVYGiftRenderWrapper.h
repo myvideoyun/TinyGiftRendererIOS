@@ -12,7 +12,7 @@ extern NSString *const MVYGiftRenderUserInfo;
 /**
  播放结束
  */
-- (void)playEnd;
+- (void)playEnd:(int)ret;
 
 @end
 @interface MVYGiftRenderWrapper : NSObject
