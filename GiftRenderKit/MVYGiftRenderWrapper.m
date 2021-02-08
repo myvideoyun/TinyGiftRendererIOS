@@ -50,12 +50,12 @@ NSString *const MVYGiftRenderUserInfo = @"GiftRenderResult";
         self.currentPlayCount ++;
         [self setEffectPath:@""];
         if (self.delegate) {
-            [self.delegate playEnd];
+            [self.delegate playEnd:ret];
         }
     }else if (self.effectPlayCount != 0 && self.currentPlayCount >= self.effectPlayCount) {
         [self setEffectPath:@""];
         if (self.delegate) {
-            [self.delegate playEnd];
+            [self.delegate playEnd:ret];
         }
     }
 }
