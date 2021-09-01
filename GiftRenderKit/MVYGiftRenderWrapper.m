@@ -12,7 +12,18 @@ NSString *const MVYGiftRenderUserInfo = @"GiftRenderResult";
 
 @implementation MVYGiftRenderWrapper
 
-- (instancetype)init {
+- (instancetype)initWithSoftwareDecoder {
+    self = [super init];
+    if (self) {
+        _effect = [[TinyGiftRender alloc] init];
+        [self.effect initGLResource:0];
+        self.effect.enalbeVFilp = NO;
+        self.effect.delegate = self;
+    }
+    return self;
+}
+
+- (instancetype)initWithHardwareDecoder {
     self = [super init];
     if (self) {
         _effect = [[TinyGiftRender alloc] init];

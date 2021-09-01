@@ -111,7 +111,7 @@
     
     if (!_animHandler) {
         //初始化AiyaAnimEffect
-        _animHandler = [[MVYGiftRenderWrapper alloc] init];
+        _animHandler = [[MVYGiftRenderWrapper alloc] initWithHardwareDecoder];
         self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"aixinmeigui_v1"];
         self.animHandler.effectPlayCount = 2;
         self.animHandler.delegate = self;
