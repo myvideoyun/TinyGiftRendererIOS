@@ -1,6 +1,6 @@
 #import "ViewController.h"
 #import <GLKit/GLKit.h>
-#import "GiftRenderKit.h"
+#import <GiftRenderKit/GiftRenderKit.h>
 
 @interface ViewController () <GLKViewDelegate, AYAnimHandlerDelegate>{
     GLKView *glkView;
@@ -88,7 +88,7 @@
     [lock unlock];
 }
 
-- (void)playEnd {
+- (void)playEnd:(int)ret {
     NSLog(@"多次播放完成");
     [displayLink invalidate];
     _animHandler = nil;

@@ -39,13 +39,15 @@ public:
 @end
 
 @implementation TinyGiftRender
-
-- (void)initGLResource {
+- (void)initGLResource:(int)decode_mode {
     effectCallBack.ayEffect = self;
     render = renderer_create(0);
     MsgCallback cb;
     cb.callback = std::bind(&AyEffectCallBack::effectMessage, &effectCallBack, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3);
     renderer_setParam(render, "MsgFunction", (void*)&cb);
+    if(decode_mode){
+        renderer_setParam(render, "EnableHWDec", &decode_mode);
+    }
     updateVFlip = false;
 }
 

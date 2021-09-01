@@ -47,7 +47,7 @@ extern NSString *const MVYGiftRenderUserInfo;
 /**
  初始化opengl相关的资源
  */
-- (void)initGLResource;
+- (void)initGLResource:(int)decode_mode;
 
 /**
  释放opengl相关的资源
