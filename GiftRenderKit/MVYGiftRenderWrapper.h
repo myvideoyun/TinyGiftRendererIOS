@@ -32,7 +32,7 @@ extern NSString *const MVYGiftRenderUserInfo;
 /**
  使用软解码器
  */
-- (instancetype)initWithSoftwareDecoder;
+- (instancetype)init;
 
 /**
  使用硬解码器
