@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05426F74B5477556F3EAED3F /* Pods_GiftRenderDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */; };
 		23C8D2BE24DFAF3300179F86 /* aixinmeigui_v1 in Resources */ = {isa = PBXBuildFile; fileRef = 23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */; };
-		A361533FEF83044128DBF42C /* Pods_GiftRenderDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */; };
 		D3AE5C6B1FF34C7D004D476B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */; };
 		D3AE5C6E1FF34C7D004D476B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C6D1FF34C7D004D476B /* ViewController.m */; };
 		D3AE5C711FF34C7D004D476B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3AE5C6F1FF34C7D004D476B /* Main.storyboard */; };
@@ -70,7 +70,7 @@
 			files = (
 				D3AE5CA51FF372E5004D476B /* libz.tbd in Frameworks */,
 				D3AE5CA11FF372C1004D476B /* libiconv.tbd in Frameworks */,
-				A361533FEF83044128DBF42C /* Pods_GiftRenderDemo.framework in Frameworks */,
+				05426F74B5477556F3EAED3F /* Pods_GiftRenderDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

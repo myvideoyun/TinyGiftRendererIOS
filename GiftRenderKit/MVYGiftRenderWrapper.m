@@ -16,7 +16,18 @@ NSString *const MVYGiftRenderUserInfo = @"GiftRenderResult";
     self = [super init];
     if (self) {
         _effect = [[TinyGiftRender alloc] init];
-        [self.effect initGLResource];
+        [self.effect initGLResource:0];
+        self.effect.enalbeVFilp = NO;
+        self.effect.delegate = self;
+    }
+    return self;
+}
+
+- (instancetype)initWithHardwareDecoder {
+    self = [super init];
+    if (self) {
+        _effect = [[TinyGiftRender alloc] init];
+        [self.effect initGLResource:1];
         self.effect.enalbeVFilp = NO;
         self.effect.delegate = self;
     }

@@ -30,6 +30,17 @@ extern NSString *const MVYGiftRenderUserInfo;
 @property(nonatomic, assign) NSUInteger effectPlayCount;
 
 /**
+ 使用软解码器
+ */
+- (instancetype)init;
+
+/**
+ 使用硬解码器
+ */
+- (instancetype)initWithHardwareDecoder;
+
+
+/**
  暂停礼物播放
  */
 - (void)pauseEffect;
