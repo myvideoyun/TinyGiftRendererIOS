@@ -1,6 +1,6 @@
 #import "ViewController.h"
 #import <GLKit/GLKit.h>
-#import <GiftRenderKit/GiftRenderKit.h>
+#import "GiftRenderKit.h"
 
 @interface ViewController () <GLKViewDelegate, AYAnimHandlerDelegate>{
     GLKView *glkView;
@@ -111,7 +111,7 @@
     
     if (!_animHandler) {
         //初始化AiyaAnimEffect
-        _animHandler = [[MVYGiftRenderWrapper alloc] initWithHardwareDecoder];
+        _animHandler = [[MVYGiftRenderWrapper alloc] init];
         self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"aixinmeigui_v1"];
         self.animHandler.effectPlayCount = 2;
         self.animHandler.delegate = self;
