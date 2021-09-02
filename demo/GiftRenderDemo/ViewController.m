@@ -110,7 +110,8 @@
     }
     
     if (!_animHandler) {
-        //初始化AiyaAnimEffect
+        // Uncomment following line to use hardware decoder
+        // _animHandler = [[MVYGiftRenderWrapper alloc] initWithHardwareDecoder]
         _animHandler = [[MVYGiftRenderWrapper alloc] init];
         self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"aixinmeigui_v1"];
         self.animHandler.effectPlayCount = 2;
