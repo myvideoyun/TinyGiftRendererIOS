@@ -89,7 +89,7 @@
 }
 
 - (void)playEnd:(int)ret {
-    NSLog(@"多次播放完成");
+    NSLog(@"多次播放完成 return %d", ret);
     [displayLink invalidate];
     _animHandler = nil;
 }
