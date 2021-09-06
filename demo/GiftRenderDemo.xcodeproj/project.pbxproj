@@ -48,6 +48,10 @@
 /* Begin PBXFileReference section */
 		0B0921A0301A2A61AD09B0F5 /* Pods-GiftRenderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftRenderDemo.debug.xcconfig"; path = "Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aixinmeigui_v1; sourceTree = "<group>"; };
+		23FE195926E587EA00FD7863 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		23FE195B26E587F200FD7863 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		23FE195D26E587F900FD7863 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		23FE195F26E5880000FD7863 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		321D670972425AEB52E21180 /* Pods-GiftRenderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftRenderDemo.release.xcconfig"; path = "Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiftRenderDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AE5C661FF34C7C004D476B /* GiftRenderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftRenderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +127,10 @@
 		D3AE5C9F1FF372C1004D476B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23FE195F26E5880000FD7863 /* CoreMedia.framework */,
+				23FE195D26E587F900FD7863 /* AVFoundation.framework */,
+				23FE195B26E587F200FD7863 /* VideoToolbox.framework */,
+				23FE195926E587EA00FD7863 /* CoreVideo.framework */,
 				D3AE5CA41FF372E5004D476B /* libz.tbd */,
 				D3AE5CA01FF372C1004D476B /* libiconv.tbd */,
 				5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */,
