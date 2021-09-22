@@ -13,6 +13,7 @@
 		23B2BA2026D9ED240013A5E6 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA1F26D9ED240013A5E6 /* VideoToolbox.framework */; };
 		23B2BA2226D9ED2A0013A5E6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA2126D9ED2A0013A5E6 /* AVFoundation.framework */; };
 		23C8D2BE24DFAF3300179F86 /* aixinmeigui_v1 in Resources */ = {isa = PBXBuildFile; fileRef = 23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */; };
+		23F1ACB226FB1561009F2578 /* dog_model in Resources */ = {isa = PBXBuildFile; fileRef = 23F1ACB126FB1561009F2578 /* dog_model */; };
 		D3AE5C6B1FF34C7D004D476B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */; };
 		D3AE5C6E1FF34C7D004D476B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C6D1FF34C7D004D476B /* ViewController.m */; };
 		D3AE5C711FF34C7D004D476B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3AE5C6F1FF34C7D004D476B /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 		23B2BA1F26D9ED240013A5E6 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		23B2BA2126D9ED2A0013A5E6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aixinmeigui_v1; sourceTree = "<group>"; };
+		23F1ACB126FB1561009F2578 /* dog_model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dog_model; sourceTree = "<group>"; };
 		321D670972425AEB52E21180 /* Pods-GiftRenderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftRenderDemo.release.xcconfig"; path = "Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiftRenderDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AE5C661FF34C7C004D476B /* GiftRenderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftRenderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 		D3AE5C681FF34C7C004D476B /* GiftRenderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				23F1ACB126FB1561009F2578 /* dog_model */,
 				23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */,
 				D3AE5C691FF34C7D004D476B /* AppDelegate.h */,
 				D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */,
@@ -245,6 +248,7 @@
 				D3AE5C731FF34C7D004D476B /* Assets.xcassets in Resources */,
 				D3AE5C711FF34C7D004D476B /* Main.storyboard in Resources */,
 				23C8D2BE24DFAF3300179F86 /* aixinmeigui_v1 in Resources */,
+				23F1ACB226FB1561009F2578 /* dog_model in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

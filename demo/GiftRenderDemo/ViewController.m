@@ -1,6 +1,6 @@
 #import "ViewController.h"
 #import <GLKit/GLKit.h>
-#import <GiftRenderKit/GiftRenderKit.h>
+#import "GiftRenderKit/GiftRenderKit.h"
 
 @interface ViewController () <GLKViewDelegate, AYAnimHandlerDelegate>{
     GLKView *glkView;
@@ -112,7 +112,7 @@
     if (!_animHandler) {
         //初始化AiyaAnimEffect
         _animHandler = [[MVYGiftRenderWrapper alloc] initWithHardwareDecoder];
-        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"aixinmeigui_v1"];
+        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"dog_model"];
         self.animHandler.effectPlayCount = 2;
         self.animHandler.delegate = self;
     }
