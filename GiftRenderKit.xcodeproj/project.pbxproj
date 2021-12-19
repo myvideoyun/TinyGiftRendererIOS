@@ -7,23 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2348BA7A27697CFA009B3E11 /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963624E18B1C006D507B /* libavcodec.a */; };
 		23B2BA2426D9ED640013A5E6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA2326D9ED640013A5E6 /* AVFoundation.framework */; };
 		23B2BA2626D9ED6A0013A5E6 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA2526D9ED6A0013A5E6 /* VideoToolbox.framework */; };
 		23B2BA2826D9ED7A0013A5E6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA2726D9ED7A0013A5E6 /* CoreMedia.framework */; };
 		23B2BA2A26D9ED800013A5E6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA2926D9ED800013A5E6 /* CoreVideo.framework */; };
+		23CCBB41276C6C9B00B5A7C6 /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963A24E18B1C006D507B /* libswscale.a */; };
+		23CCBB42276C6CC700B5A7C6 /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963424E18B1C006D507B /* libavutil.a */; };
 		D36926B41FCE527E00A00D12 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926A91FCE4F7100A00D12 /* libc++.tbd */; };
 		D36926E81FCEBEAE00A00D12 /* MVYSDKAuthTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D36926E61FCEBEAE00A00D12 /* MVYSDKAuthTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D36926E91FCEBEAE00A00D12 /* MVYSDKAuthTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D36926E71FCEBEAE00A00D12 /* MVYSDKAuthTool.m */; };
 		D36926F31FCEC9BB00A00D12 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926F21FCEC9BB00A00D12 /* libz.tbd */; };
 		D36926F51FCEC9DA00A00D12 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D36926F41FCEC9DA00A00D12 /* libiconv.tbd */; };
 		D37926EF1FCD081A007DB5E8 /* GiftRenderKit.h in Headers */ = {isa = PBXBuildFile; fileRef = D37926ED1FCD081A007DB5E8 /* GiftRenderKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D390964224E18B1C006D507B /* libavutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963424E18B1C006D507B /* libavutil.a */; };
-		D390964324E18B1C006D507B /* libavfilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963524E18B1C006D507B /* libavfilter.a */; };
-		D390964424E18B1C006D507B /* libavcodec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963624E18B1C006D507B /* libavcodec.a */; };
-		D390964524E18B1C006D507B /* libavformat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963724E18B1C006D507B /* libavformat.a */; };
-		D390964624E18B1C006D507B /* libavdevice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963824E18B1C006D507B /* libavdevice.a */; };
-		D390964724E18B1C006D507B /* libswresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963924E18B1C006D507B /* libswresample.a */; };
-		D390964824E18B1C006D507B /* libswscale.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963A24E18B1C006D507B /* libswscale.a */; };
 		D390964924E18B1C006D507B /* libdav1d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963B24E18B1C006D507B /* libdav1d.a */; };
 		D390964A24E18B1C006D507B /* TinyGiftRenderAuth.mm in Sources */ = {isa = PBXBuildFile; fileRef = D390963C24E18B1C006D507B /* TinyGiftRenderAuth.mm */; };
 		D390964B24E18B1C006D507B /* libgiftrender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D390963D24E18B1C006D507B /* libgiftrender.a */; };
@@ -78,16 +74,12 @@
 				23B2BA2626D9ED6A0013A5E6 /* VideoToolbox.framework in Frameworks */,
 				23B2BA2426D9ED640013A5E6 /* AVFoundation.framework in Frameworks */,
 				D36926B41FCE527E00A00D12 /* libc++.tbd in Frameworks */,
-				D390964724E18B1C006D507B /* libswresample.a in Frameworks */,
-				D390964324E18B1C006D507B /* libavfilter.a in Frameworks */,
-				D390964624E18B1C006D507B /* libavdevice.a in Frameworks */,
-				D390964524E18B1C006D507B /* libavformat.a in Frameworks */,
 				D36926F31FCEC9BB00A00D12 /* libz.tbd in Frameworks */,
-				D390964824E18B1C006D507B /* libswscale.a in Frameworks */,
 				D390964B24E18B1C006D507B /* libgiftrender.a in Frameworks */,
-				D390964224E18B1C006D507B /* libavutil.a in Frameworks */,
+				23CCBB41276C6C9B00B5A7C6 /* libswscale.a in Frameworks */,
+				23CCBB42276C6CC700B5A7C6 /* libavutil.a in Frameworks */,
 				D36926F51FCEC9DA00A00D12 /* libiconv.tbd in Frameworks */,
-				D390964424E18B1C006D507B /* libavcodec.a in Frameworks */,
+				2348BA7A27697CFA009B3E11 /* libavcodec.a in Frameworks */,
 				D390964924E18B1C006D507B /* libdav1d.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +394,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/GiftRenderKit/GiftRenderLib/FFmpeg\"",
 					"\"$(SRCROOT)/GiftRenderKit/GiftRenderLib\"",
+					"$(PROJECT_DIR)/GiftRenderKit/GiftRenderLib/FFmpeg",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.GiftRenderKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -430,6 +423,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/GiftRenderKit/GiftRenderLib/FFmpeg\"",
 					"\"$(SRCROOT)/GiftRenderKit/GiftRenderLib\"",
+					"$(PROJECT_DIR)/GiftRenderKit/GiftRenderLib/FFmpeg",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.GiftRenderKit;
