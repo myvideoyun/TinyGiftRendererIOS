@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    int auth_ret = [MVYSDKAuthTool requestAuthEx:@"B7EkZE/J8ucIeYj9mcIytHLhKh9dOSh39hr2ALWHmiXOjj+sUxpNoEL4xlC/im9MK2aaCu6YLlikOlbOzXXEuUqjkufKAcjIVWLiLWmCx3qGjtYurdSmNzTO6NLXXeca8jK8iFOwbQe12FQqiaCb7g==" LicenseLength:112 Key:@"B5fWhjmEcav+GsFIh5tpyY9dLingLBM2jUOUZ+WnLY0CyXUsw+yrP2tn/Z9R/7bASFOmiq61l+yQUFqsv17wPg==" KeyLength:64];
+    int auth_ret = [MVYSDKAuthTool requestAuthEx:@"B7EkZE/J8ucIeYj9mcIytHLhKh9dOSh39hr2ALWHmiXOjj+sUxpNoEL4xlC/im9MK2aaCu6YLlikOlbOzXXEuUqjkufKAcjIVWLiLWmCx3qGjtYurdSmNzTO6NLXXeca8jK8iFOwbQe12FQqiaCb7g==" LicenseLength:112 Key:@"8bQd0ysr85WwOE2eNn3y1o9dLingLBM2jUOUZ+WnLY0CyXUsw+yrP2tn/Z9R/7bASFOmiq61l+yQUFqsv17wPg==" KeyLength:64];
 
     if (auth_ret == 0)
         NSLog(@"Authenticate OK!");
@@ -63,12 +63,14 @@
 
 - (void)onButtonClick:(UIButton *)btn {
     if ([btn.currentTitle isEqualToString:@"play"]) {
-        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"aixinmeigui_v1"];
+        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"yurenjie"];
+        //self.animHandler.overlayPath = [[NSBundle mainBundle] pathForResource:@"xin_19" ofType:@"png" inDirectory:@"yurenjie"];
         [self.animHandler setEffectPlayCount:1];
         [button setTitle:@"stop" forState:UIControlStateNormal];
         
     } else if ([btn.currentTitle isEqualToString:@"stop"]) {
         self.animHandler.effectPath = @"";
+        //self.animHandler.overlayPath = @"";
         [button setTitle:@"play" forState:UIControlStateNormal];
 
     }
@@ -115,7 +117,9 @@
             _animHandler = [[MVYGiftRenderWrapper alloc] initWithHardwareDecoder];
         else
             _animHandler = [[MVYGiftRenderWrapper alloc] init];
-        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"aixinmeigui_v1"];
+        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"yurenjie"];
+        //self.animHandler.overlayPath = [[NSBundle mainBundle] pathForResource:@"xin_19" ofType:@"png" inDirectory:@"yurenjie"];
+
         self.animHandler.effectPlayCount = 2;
         self.animHandler.delegate = self;
     }

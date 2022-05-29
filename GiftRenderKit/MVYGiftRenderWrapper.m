@@ -27,7 +27,7 @@ NSString *const MVYGiftRenderUserInfo = @"GiftRenderResult";
     self = [super init];
     if (self) {
         _effect = [[TinyGiftRender alloc] init];
-        [self.effect initGLResource:1];
+        [self.effect initGLResource:0];
         self.effect.enalbeVFilp = NO;
         self.effect.delegate = self;
     }
@@ -48,6 +48,12 @@ NSString *const MVYGiftRenderUserInfo = @"GiftRenderResult";
     [self.effect setEffectPath:effectPath];
 }
 
+- (void)setOverlayPath:(NSString *)overlayPath {
+    _overlayPath = overlayPath;
+
+    [self.effect setOverlayPath:overlayPath];
+}
+
 - (void)setEffectPlayCount:(NSUInteger)effectPlayCount {
     _effectPlayCount = effectPlayCount;
     self.currentPlayCount = 0;
@@ -60,11 +66,13 @@ NSString *const MVYGiftRenderUserInfo = @"GiftRenderResult";
     }else if (ret == MSG_STAT_EFFECTS_END || ret < 0) {
         self.currentPlayCount ++;
         [self setEffectPath:@""];
+        [self setOverlayPath:@""];
         if (self.delegate) {
             [self.delegate playEnd:ret];
         }
     }else if (self.effectPlayCount != 0 && self.currentPlayCount >= self.effectPlayCount) {
         [self setEffectPath:@""];
+        [self setOverlayPath:@""];
         if (self.delegate) {
             [self.delegate playEnd:ret];
         }

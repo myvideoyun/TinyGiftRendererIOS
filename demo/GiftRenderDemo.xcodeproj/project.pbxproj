@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230F5D7A28329A0400FF1461 /* yurenjie in Resources */ = {isa = PBXBuildFile; fileRef = 230F5D7828329A0400FF1461 /* yurenjie */; };
 		05426F74B5477556F3EAED3F /* Pods_GiftRenderDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */; };
 		23C8D2BE24DFAF3300179F86 /* aixinmeigui_v1 in Resources */ = {isa = PBXBuildFile; fileRef = 23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */; };
+		23F1ACB226FB1561009F2578 /* dog_model in Resources */ = {isa = PBXBuildFile; fileRef = 23F1ACB126FB1561009F2578 /* dog_model */; };
 		D3AE5C6B1FF34C7D004D476B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */; };
 		D3AE5C6E1FF34C7D004D476B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C6D1FF34C7D004D476B /* ViewController.m */; };
 		D3AE5C711FF34C7D004D476B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3AE5C6F1FF34C7D004D476B /* Main.storyboard */; };
@@ -47,6 +49,8 @@
 
 /* Begin PBXFileReference section */
 		0B0921A0301A2A61AD09B0F5 /* Pods-GiftRenderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftRenderDemo.debug.xcconfig"; path = "Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		230F5D7828329A0400FF1461 /* yurenjie */ = {isa = PBXFileReference; lastKnownFileType = folder; path = yurenjie; sourceTree = "<group>"; };
+		23F1ACB126FB1561009F2578 /* dog_model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dog_model; sourceTree = "<group>"; };
 		23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aixinmeigui_v1; sourceTree = "<group>"; };
 		23FE195926E587EA00FD7863 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		23FE195B26E587F200FD7863 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
@@ -111,6 +115,8 @@
 		D3AE5C681FF34C7C004D476B /* GiftRenderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				230F5D7828329A0400FF1461 /* yurenjie */,
+				23F1ACB126FB1561009F2578 /* dog_model */,
 				23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */,
 				D3AE5C691FF34C7D004D476B /* AppDelegate.h */,
 				D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */,
@@ -203,6 +209,8 @@
 				D3AE5C731FF34C7D004D476B /* Assets.xcassets in Resources */,
 				D3AE5C711FF34C7D004D476B /* Main.storyboard in Resources */,
 				23C8D2BE24DFAF3300179F86 /* aixinmeigui_v1 in Resources */,
+				230F5D7A28329A0400FF1461 /* yurenjie in Resources */,
+				23F1ACB226FB1561009F2578 /* dog_model in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,10 +396,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XF7HNQXZKK;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GiftRendererKit/GiftRendererKit.framework/Headers\"",
-				);
+				HEADER_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/GiftRenderKit/GiftRenderKit.framework/Headers\"";
 				INFOPLIST_FILE = "$(SRCROOT)/GiftRenderDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -409,6 +414,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XF7HNQXZKK;
+				HEADER_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/GiftRenderKit/GiftRenderKit.framework/Headers\"";
 				INFOPLIST_FILE = "$(SRCROOT)/GiftRenderDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

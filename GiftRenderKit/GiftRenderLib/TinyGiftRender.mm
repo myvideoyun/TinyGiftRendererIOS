@@ -35,6 +35,7 @@ public:
 
     BOOL updateEffectPath;
     BOOL updateVFlip;
+    BOOL updateOverlayPath;
 }
 @end
 
@@ -53,12 +54,19 @@ public:
 
 - (void)releaseGLtContext {
     renderer_releaseResources(render);
+    renderer_destropy(render);
 }
 
 - (void)setEffectPath:(NSString *)effectPath {
     _effectPath = effectPath;
 
     updateEffectPath = YES;
+}
+
+- (void)setOverlayPath:(NSString *)path {
+    _overlayPath = path;
+
+    updateOverlayPath = YES;
 }
 
 - (void)setFaceData:(void *)faceData{
@@ -78,12 +86,26 @@ public:
 
         updateEffectPath = NO;
     }
+    if(updateOverlayPath){
+        std::string path = std::string([_overlayPath UTF8String]);
+        renderer_setParam(render, "OverlayImgPath", (void *)path.c_str());
+
+        updateOverlayPath = NO;
+    }
 
     if (updateVFlip) {
         int enable = self.enalbeVFilp;
         renderer_setParam(render, "EnableVFlip", &enable);
     }
-
+    int setup_modelview = false;
+    if(setup_modelview){
+        const float modelview[16] = {
+            0.999559f,  0.006781f,  -0.028911f, 0.000000f,
+            -0.005831f, 0.999445f,  0.032811f,  0.000000f,
+            0.029117f,  -0.032628f, 0.999043f,  0.000000f,
+            0.001027f,  0.004984f,  -0.864680f, 1.000000f};
+        renderer_setParam(render, "ModelView", (void *)modelview);
+    }
     renderer_render(render, texture, width, height, NULL);
 }
 
