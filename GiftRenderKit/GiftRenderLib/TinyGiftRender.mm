@@ -53,6 +53,7 @@ public:
 
 - (void)releaseGLtContext {
     renderer_releaseResources(render);
+    renderer_destropy(render);
 }
 
 - (void)setEffectPath:(NSString *)effectPath {
