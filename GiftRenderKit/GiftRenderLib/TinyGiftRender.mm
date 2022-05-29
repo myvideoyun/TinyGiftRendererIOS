@@ -84,13 +84,15 @@ public:
         int enable = self.enalbeVFilp;
         renderer_setParam(render, "EnableVFlip", &enable);
     }
-    const float modelview[16] = {
-        0.999559f,  0.006781f,  -0.028911f, 0.000000f,
-        -0.005831f, 0.999445f,  0.032811f,  0.000000f,
-        0.029117f,  -0.032628f, 0.999043f,  0.000000f,
-        0.001027f,  0.004984f,  -0.864680f, 1.000000f};
-    renderer_setParam(render, "ModelView", (void *)modelview);
-    
+    int setup_modelview = false;
+    if(setup_modelview){
+        const float modelview[16] = {
+            0.999559f,  0.006781f,  -0.028911f, 0.000000f,
+            -0.005831f, 0.999445f,  0.032811f,  0.000000f,
+            0.029117f,  -0.032628f, 0.999043f,  0.000000f,
+            0.001027f,  0.004984f,  -0.864680f, 1.000000f};
+        renderer_setParam(render, "ModelView", (void *)modelview);
+    }
     renderer_render(render, texture, width, height, NULL);
 }
 
