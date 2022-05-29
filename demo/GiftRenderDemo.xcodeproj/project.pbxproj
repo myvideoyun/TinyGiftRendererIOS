@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230F5D7A28329A0400FF1461 /* yurenjie in Resources */ = {isa = PBXBuildFile; fileRef = 230F5D7828329A0400FF1461 /* yurenjie */; };
 		23B2BA1826D9EA960013A5E6 /* GiftRenderKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA1726D9EA3C0013A5E6 /* GiftRenderKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		23B2BA1C26D9ED170013A5E6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA1A26D9ED170013A5E6 /* CoreMedia.framework */; };
 		23B2BA1E26D9ED1F0013A5E6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA1D26D9ED1F0013A5E6 /* CoreVideo.framework */; };
@@ -63,12 +64,14 @@
 
 /* Begin PBXFileReference section */
 		0B0921A0301A2A61AD09B0F5 /* Pods-GiftRenderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftRenderDemo.debug.xcconfig"; path = "Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		230F5D7828329A0400FF1461 /* yurenjie */ = {isa = PBXFileReference; lastKnownFileType = folder; path = yurenjie; sourceTree = "<group>"; };
 		23B2BA0D26D9EA380013A5E6 /* GiftRenderKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GiftRenderKit.xcodeproj; path = ../GiftRenderKit.xcodeproj; sourceTree = "<group>"; };
 		23B2BA1A26D9ED170013A5E6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		23B2BA1D26D9ED1F0013A5E6 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		23B2BA1F26D9ED240013A5E6 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		23B2BA2126D9ED2A0013A5E6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aixinmeigui_v1; sourceTree = "<group>"; };
+		23CCBB43276C813B00B5A7C6 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../GiftRenderKit/GiftRenderLib/FFmpeg/libavformat.a; sourceTree = "<group>"; };
 		23F1ACB126FB1561009F2578 /* dog_model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dog_model; sourceTree = "<group>"; };
 		321D670972425AEB52E21180 /* Pods-GiftRenderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftRenderDemo.release.xcconfig"; path = "Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiftRenderDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +144,7 @@
 		D3AE5C681FF34C7C004D476B /* GiftRenderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				230F5D7828329A0400FF1461 /* yurenjie */,
 				23F1ACB126FB1561009F2578 /* dog_model */,
 				23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */,
 				D3AE5C691FF34C7D004D476B /* AppDelegate.h */,
@@ -158,6 +162,7 @@
 		D3AE5C9F1FF372C1004D476B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				23CCBB43276C813B00B5A7C6 /* libavformat.a */,
 				23B2BA2126D9ED2A0013A5E6 /* AVFoundation.framework */,
 				23B2BA1F26D9ED240013A5E6 /* VideoToolbox.framework */,
 				23B2BA1D26D9ED1F0013A5E6 /* CoreVideo.framework */,
@@ -248,6 +253,7 @@
 				D3AE5C731FF34C7D004D476B /* Assets.xcassets in Resources */,
 				D3AE5C711FF34C7D004D476B /* Main.storyboard in Resources */,
 				23C8D2BE24DFAF3300179F86 /* aixinmeigui_v1 in Resources */,
+				230F5D7A28329A0400FF1461 /* yurenjie in Resources */,
 				23F1ACB226FB1561009F2578 /* dog_model in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,14 +397,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XF7HNQXZKK;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GiftRendererKit/GiftRendererKit.framework/Headers\"",
-				);
+				HEADER_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/GiftRenderKit/GiftRenderKit.framework/Headers\"";
 				INFOPLIST_FILE = "$(SRCROOT)/GiftRenderDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/../GiftRenderKit/GiftRenderLib/FFmpeg";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-l\"c++\"",
@@ -419,10 +423,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XF7HNQXZKK;
+				HEADER_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/GiftRenderKit/GiftRenderKit.framework/Headers\"";
 				INFOPLIST_FILE = "$(SRCROOT)/GiftRenderDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/../GiftRenderKit/GiftRenderLib/FFmpeg";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-l\"c++\"",

@@ -30,8 +30,8 @@
             filePath = "GiftRenderDemo/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "-willEnterForeground"
             landmarkType = "7">
          </BreakpointContent>
