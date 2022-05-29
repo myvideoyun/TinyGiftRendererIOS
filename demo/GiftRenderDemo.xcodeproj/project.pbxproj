@@ -8,11 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		230F5D7A28329A0400FF1461 /* yurenjie in Resources */ = {isa = PBXBuildFile; fileRef = 230F5D7828329A0400FF1461 /* yurenjie */; };
-		23B2BA1826D9EA960013A5E6 /* GiftRenderKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA1726D9EA3C0013A5E6 /* GiftRenderKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		23B2BA1C26D9ED170013A5E6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA1A26D9ED170013A5E6 /* CoreMedia.framework */; };
-		23B2BA1E26D9ED1F0013A5E6 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA1D26D9ED1F0013A5E6 /* CoreVideo.framework */; };
-		23B2BA2026D9ED240013A5E6 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA1F26D9ED240013A5E6 /* VideoToolbox.framework */; };
-		23B2BA2226D9ED2A0013A5E6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B2BA2126D9ED2A0013A5E6 /* AVFoundation.framework */; };
+		05426F74B5477556F3EAED3F /* Pods_GiftRenderDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */; };
 		23C8D2BE24DFAF3300179F86 /* aixinmeigui_v1 in Resources */ = {isa = PBXBuildFile; fileRef = 23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */; };
 		23F1ACB226FB1561009F2578 /* dog_model in Resources */ = {isa = PBXBuildFile; fileRef = 23F1ACB126FB1561009F2578 /* dog_model */; };
 		D3AE5C6B1FF34C7D004D476B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */; };
@@ -38,16 +34,6 @@
 		};
 /* End PBXBuildRule section */
 
-/* Begin PBXContainerItemProxy section */
-		23B2BA1626D9EA3C0013A5E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 23B2BA0D26D9EA380013A5E6 /* GiftRenderKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D37926EA1FCD081A007DB5E8;
-			remoteInfo = GiftRenderKit;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		D3AE5C9E1FF372B8004D476B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -55,7 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				23B2BA1826D9EA960013A5E6 /* GiftRenderKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,14 +50,12 @@
 /* Begin PBXFileReference section */
 		0B0921A0301A2A61AD09B0F5 /* Pods-GiftRenderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftRenderDemo.debug.xcconfig"; path = "Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		230F5D7828329A0400FF1461 /* yurenjie */ = {isa = PBXFileReference; lastKnownFileType = folder; path = yurenjie; sourceTree = "<group>"; };
-		23B2BA0D26D9EA380013A5E6 /* GiftRenderKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GiftRenderKit.xcodeproj; path = ../GiftRenderKit.xcodeproj; sourceTree = "<group>"; };
-		23B2BA1A26D9ED170013A5E6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		23B2BA1D26D9ED1F0013A5E6 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
-		23B2BA1F26D9ED240013A5E6 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
-		23B2BA2126D9ED2A0013A5E6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aixinmeigui_v1; sourceTree = "<group>"; };
-		23CCBB43276C813B00B5A7C6 /* libavformat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libavformat.a; path = ../GiftRenderKit/GiftRenderLib/FFmpeg/libavformat.a; sourceTree = "<group>"; };
 		23F1ACB126FB1561009F2578 /* dog_model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dog_model; sourceTree = "<group>"; };
+		23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aixinmeigui_v1; sourceTree = "<group>"; };
+		23FE195926E587EA00FD7863 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		23FE195B26E587F200FD7863 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		23FE195D26E587F900FD7863 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		23FE195F26E5880000FD7863 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		321D670972425AEB52E21180 /* Pods-GiftRenderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftRenderDemo.release.xcconfig"; path = "Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiftRenderDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AE5C661FF34C7C004D476B /* GiftRenderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftRenderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,26 +76,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23B2BA1C26D9ED170013A5E6 /* CoreMedia.framework in Frameworks */,
 				D3AE5CA51FF372E5004D476B /* libz.tbd in Frameworks */,
-				23B2BA2226D9ED2A0013A5E6 /* AVFoundation.framework in Frameworks */,
-				23B2BA2026D9ED240013A5E6 /* VideoToolbox.framework in Frameworks */,
 				D3AE5CA11FF372C1004D476B /* libiconv.tbd in Frameworks */,
-				23B2BA1E26D9ED1F0013A5E6 /* CoreVideo.framework in Frameworks */,
+				05426F74B5477556F3EAED3F /* Pods_GiftRenderDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23B2BA1326D9EA3C0013A5E6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				23B2BA1726D9EA3C0013A5E6 /* GiftRenderKit.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		6582F959D01E76B6C98228D8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,7 +97,6 @@
 		D3AE5C5D1FF34C7C004D476B = {
 			isa = PBXGroup;
 			children = (
-				23B2BA0D26D9EA380013A5E6 /* GiftRenderKit.xcodeproj */,
 				D3AE5C681FF34C7C004D476B /* GiftRenderDemo */,
 				D3AE5C671FF34C7C004D476B /* Products */,
 				D3AE5C9F1FF372C1004D476B /* Frameworks */,
@@ -162,11 +133,10 @@
 		D3AE5C9F1FF372C1004D476B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23CCBB43276C813B00B5A7C6 /* libavformat.a */,
-				23B2BA2126D9ED2A0013A5E6 /* AVFoundation.framework */,
-				23B2BA1F26D9ED240013A5E6 /* VideoToolbox.framework */,
-				23B2BA1D26D9ED1F0013A5E6 /* CoreVideo.framework */,
-				23B2BA1A26D9ED170013A5E6 /* CoreMedia.framework */,
+				23FE195F26E5880000FD7863 /* CoreMedia.framework */,
+				23FE195D26E587F900FD7863 /* AVFoundation.framework */,
+				23FE195B26E587F200FD7863 /* VideoToolbox.framework */,
+				23FE195926E587EA00FD7863 /* CoreVideo.framework */,
 				D3AE5CA41FF372E5004D476B /* libz.tbd */,
 				D3AE5CA01FF372C1004D476B /* libiconv.tbd */,
 				5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */,
@@ -181,10 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3AE5C7C1FF34C7D004D476B /* Build configuration list for PBXNativeTarget "GiftRenderDemo" */;
 			buildPhases = (
+				ADABDA80712D398E55C6492B /* [CP] Check Pods Manifest.lock */,
 				D3AE5C621FF34C7C004D476B /* Sources */,
 				D3AE5C631FF34C7C004D476B /* Frameworks */,
 				D3AE5C641FF34C7C004D476B /* Resources */,
 				D3AE5C9E1FF372B8004D476B /* Embed Frameworks */,
+				7E8B75EC39DA2F4D3B325993 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 				239501C221C49863006FF051 /* PBXBuildRule */,
@@ -222,28 +194,12 @@
 			mainGroup = D3AE5C5D1FF34C7C004D476B;
 			productRefGroup = D3AE5C671FF34C7C004D476B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 23B2BA1326D9EA3C0013A5E6 /* Products */;
-					ProjectRef = 23B2BA0D26D9EA380013A5E6 /* GiftRenderKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				D3AE5C651FF34C7C004D476B /* GiftRenderDemo */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		23B2BA1726D9EA3C0013A5E6 /* GiftRenderKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = GiftRenderKit.framework;
-			remoteRef = 23B2BA1626D9EA3C0013A5E6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D3AE5C641FF34C7C004D476B /* Resources */ = {
@@ -259,6 +215,49 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E8B75EC39DA2F4D3B325993 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GiftRendererKit/GiftRendererKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GiftRendererKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADABDA80712D398E55C6492B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GiftRenderDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3AE5C621FF34C7C004D476B /* Sources */ = {
@@ -401,14 +400,6 @@
 				INFOPLIST_FILE = "$(SRCROOT)/GiftRenderDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
-				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/../GiftRenderKit/GiftRenderLib/FFmpeg";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-l\"c++\"",
-					"-l\"iconv\"",
-					"-l\"z\"",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.GiftRenderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -427,14 +418,6 @@
 				INFOPLIST_FILE = "$(SRCROOT)/GiftRenderDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
-				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(PROJECT_DIR)/../GiftRenderKit/GiftRenderLib/FFmpeg";
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-l\"c++\"",
-					"-l\"iconv\"",
-					"-l\"z\"",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.GiftRenderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

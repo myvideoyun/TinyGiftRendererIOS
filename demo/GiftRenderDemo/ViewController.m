@@ -1,6 +1,6 @@
 #import "ViewController.h"
 #import <GLKit/GLKit.h>
-#import <GiftRenderKit/GiftRenderKit.h>
+#import "GiftRenderKit.h"
 
 @interface ViewController () <GLKViewDelegate, AYAnimHandlerDelegate>{
     GLKView *glkView;
@@ -91,7 +91,7 @@
 }
 
 - (void)playEnd:(int)ret {
-    NSLog(@"多次播放完成");
+    NSLog(@"多次播放完成 return %d", ret);
     [displayLink invalidate];
     _animHandler = nil;
 }
@@ -112,10 +112,14 @@
     }
     
     if (!_animHandler) {
-        //初始化AiyaAnimEffect
-        _animHandler = [[MVYGiftRenderWrapper alloc] initWithHardwareDecoder];
-        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"overlay_setting1" ofType:@"json" inDirectory:@"yurenjie"];
+        // set to 1 to enable hardware decode
+        if((0))
+            _animHandler = [[MVYGiftRenderWrapper alloc] initWithHardwareDecoder];
+        else
+            _animHandler = [[MVYGiftRenderWrapper alloc] init];
+        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"yurenjie"];
         //self.animHandler.overlayPath = [[NSBundle mainBundle] pathForResource:@"xin_19" ofType:@"png" inDirectory:@"yurenjie"];
+
         self.animHandler.effectPlayCount = 2;
         self.animHandler.delegate = self;
     }
