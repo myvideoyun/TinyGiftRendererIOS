@@ -1,6 +1,6 @@
 #import "ViewController.h"
 #import <GLKit/GLKit.h>
-#import "GiftRenderKit/GiftRenderKit.h"
+#import <GiftRenderKit/GiftRenderKit.h>
 
 @interface ViewController () <GLKViewDelegate, AYAnimHandlerDelegate>{
     GLKView *glkView;
@@ -63,14 +63,14 @@
 
 - (void)onButtonClick:(UIButton *)btn {
     if ([btn.currentTitle isEqualToString:@"play"]) {
-        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"overlay_setting1" ofType:@"json" inDirectory:@"yurenjie"];
-        self.animHandler.overlayPath = [[NSBundle mainBundle] pathForResource:@"xin_19" ofType:@"png" inDirectory:@"yurenjie"];
+        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"yurenjie"];
+        //self.animHandler.overlayPath = [[NSBundle mainBundle] pathForResource:@"xin_19" ofType:@"png" inDirectory:@"yurenjie"];
         [self.animHandler setEffectPlayCount:1];
         [button setTitle:@"stop" forState:UIControlStateNormal];
         
     } else if ([btn.currentTitle isEqualToString:@"stop"]) {
         self.animHandler.effectPath = @"";
-        self.animHandler.overlayPath = @"";
+        //self.animHandler.overlayPath = @"";
         [button setTitle:@"play" forState:UIControlStateNormal];
 
     }
@@ -115,7 +115,7 @@
         //初始化AiyaAnimEffect
         _animHandler = [[MVYGiftRenderWrapper alloc] initWithHardwareDecoder];
         self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"overlay_setting1" ofType:@"json" inDirectory:@"yurenjie"];
-        self.animHandler.overlayPath = [[NSBundle mainBundle] pathForResource:@"xin_19" ofType:@"png" inDirectory:@"yurenjie"];
+        //self.animHandler.overlayPath = [[NSBundle mainBundle] pathForResource:@"xin_19" ofType:@"png" inDirectory:@"yurenjie"];
         self.animHandler.effectPlayCount = 2;
         self.animHandler.delegate = self;
     }
