@@ -35,6 +35,7 @@ public:
 
     BOOL updateEffectPath;
     BOOL updateVFlip;
+    BOOL updateOverlayPath;
 }
 @end
 
@@ -62,6 +63,12 @@ public:
     updateEffectPath = YES;
 }
 
+- (void)setOverlayPath:(NSString *)path {
+    _overlayPath = path;
+
+    updateOverlayPath = YES;
+}
+
 - (void)setFaceData:(void *)faceData{
     // TODO: implement
 }
@@ -78,6 +85,12 @@ public:
         renderer_setParam(render, "StickerType", (void *)path.c_str());
 
         updateEffectPath = NO;
+    }
+    if(updateOverlayPath){
+        std::string path = std::string([_overlayPath UTF8String]);
+        renderer_setParam(render, "OverlayImgPath", (void *)path.c_str());
+
+        updateOverlayPath = NO;
     }
 
     if (updateVFlip) {

@@ -40,6 +40,10 @@ extern NSString *const MVYGiftRenderUserInfo;
 @property(nonatomic, strong) NSString *effectPath;
 
 /**
+ 特效文件路径
+ */
+@property(nonatomic, strong) NSString *overlayPath;
+/**
  垂直翻转帧动画, 默认关
  */
 @property(nonatomic, assign) BOOL enalbeVFilp;

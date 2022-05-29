@@ -23,6 +23,10 @@ extern NSString *const MVYGiftRenderUserInfo;
  set gift path
  */
 @property(nonatomic, strong) NSString *effectPath;
+/**
+ set gift path
+ */
+@property(nonatomic, strong) NSString *overlayPath;
 
 /**
  设置礼物播放次数
