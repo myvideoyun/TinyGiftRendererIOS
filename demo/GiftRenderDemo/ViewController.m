@@ -1,6 +1,6 @@
 #import "ViewController.h"
 #import <GLKit/GLKit.h>
-#import "GiftRenderKit.h"
+#import <GiftRendererKit/GiftRenderKit.h>
 
 @interface ViewController () <GLKViewDelegate, AYAnimHandlerDelegate>{
     GLKView *glkView;
@@ -64,13 +64,39 @@
 - (void)onButtonClick:(UIButton *)btn {
     if ([btn.currentTitle isEqualToString:@"play"]) {
         self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"yurenjie"];
-        //self.animHandler.overlayPath = [[NSBundle mainBundle] pathForResource:@"xin_19" ofType:@"png" inDirectory:@"yurenjie"];
+        
+        // Create path.
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"image.png"];
+        
+        // Save image.
+        if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                NSData *avatarData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://avatars.githubusercontent.com/u/45362645?v=4"]];
+                if (avatarData != NULL) {
+                    UIImage *image = [UIImage imageWithData:avatarData];
+                    
+                    // Convert to PNG
+                    [UIImagePNGRepresentation(image) writeToFile:filePath atomically:YES];
+                    
+                    dispatch_sync(dispatch_get_main_queue(), ^{
+                        if ([btn.currentTitle isEqualToString:@"stop"]) {
+                            self.animHandler.overlayPath = filePath;
+                        }
+                    });
+                }
+                
+            });
+        } else {
+            self.animHandler.overlayPath = filePath;
+        }
+
         [self.animHandler setEffectPlayCount:1];
         [button setTitle:@"stop" forState:UIControlStateNormal];
         
     } else if ([btn.currentTitle isEqualToString:@"stop"]) {
         self.animHandler.effectPath = @"";
-        //self.animHandler.overlayPath = @"";
+        self.animHandler.overlayPath = @"";
         [button setTitle:@"play" forState:UIControlStateNormal];
 
     }
@@ -94,6 +120,8 @@
     NSLog(@"多次播放完成 return %d", ret);
     [displayLink invalidate];
     _animHandler = nil;
+    
+    [button setTitle:@"play" forState:UIControlStateNormal];
 }
 
 #pragma mark CADisplayLink selector

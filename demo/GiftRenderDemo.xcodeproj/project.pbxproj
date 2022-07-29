@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		230F5D7A28329A0400FF1461 /* yurenjie in Resources */ = {isa = PBXBuildFile; fileRef = 230F5D7828329A0400FF1461 /* yurenjie */; };
 		05426F74B5477556F3EAED3F /* Pods_GiftRenderDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */; };
+		230F5D7A28329A0400FF1461 /* yurenjie in Resources */ = {isa = PBXBuildFile; fileRef = 230F5D7828329A0400FF1461 /* yurenjie */; };
 		23C8D2BE24DFAF3300179F86 /* aixinmeigui_v1 in Resources */ = {isa = PBXBuildFile; fileRef = 23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */; };
 		23F1ACB226FB1561009F2578 /* dog_model in Resources */ = {isa = PBXBuildFile; fileRef = 23F1ACB126FB1561009F2578 /* dog_model */; };
 		D3AE5C6B1FF34C7D004D476B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */; };
@@ -34,30 +34,18 @@
 		};
 /* End PBXBuildRule section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		D3AE5C9E1FF372B8004D476B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		0B0921A0301A2A61AD09B0F5 /* Pods-GiftRenderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftRenderDemo.debug.xcconfig"; path = "Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		230F5D7828329A0400FF1461 /* yurenjie */ = {isa = PBXFileReference; lastKnownFileType = folder; path = yurenjie; sourceTree = "<group>"; };
-		23F1ACB126FB1561009F2578 /* dog_model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dog_model; sourceTree = "<group>"; };
 		23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aixinmeigui_v1; sourceTree = "<group>"; };
+		23F1ACB126FB1561009F2578 /* dog_model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dog_model; sourceTree = "<group>"; };
 		23FE195926E587EA00FD7863 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		23FE195B26E587F200FD7863 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		23FE195D26E587F900FD7863 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		23FE195F26E5880000FD7863 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		321D670972425AEB52E21180 /* Pods-GiftRenderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftRenderDemo.release.xcconfig"; path = "Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiftRenderDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3876EEF28939F5A00F9CC1D /* GiftRendererKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GiftRendererKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AE5C661FF34C7C004D476B /* GiftRenderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftRenderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AE5C691FF34C7D004D476B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -133,6 +121,7 @@
 		D3AE5C9F1FF372C1004D476B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3876EEF28939F5A00F9CC1D /* GiftRendererKit.framework */,
 				23FE195F26E5880000FD7863 /* CoreMedia.framework */,
 				23FE195D26E587F900FD7863 /* AVFoundation.framework */,
 				23FE195B26E587F200FD7863 /* VideoToolbox.framework */,
@@ -155,7 +144,6 @@
 				D3AE5C621FF34C7C004D476B /* Sources */,
 				D3AE5C631FF34C7C004D476B /* Frameworks */,
 				D3AE5C641FF34C7C004D476B /* Resources */,
-				D3AE5C9E1FF372B8004D476B /* Embed Frameworks */,
 				7E8B75EC39DA2F4D3B325993 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -398,7 +386,7 @@
 				DEVELOPMENT_TEAM = XF7HNQXZKK;
 				HEADER_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/GiftRenderKit/GiftRenderKit.framework/Headers\"";
 				INFOPLIST_FILE = "$(SRCROOT)/GiftRenderDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.GiftRenderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,14 +400,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XF7HNQXZKK;
 				HEADER_SEARCH_PATHS = "\"${PODS_CONFIGURATION_BUILD_DIR}/GiftRenderKit/GiftRenderKit.framework/Headers\"";
 				INFOPLIST_FILE = "$(SRCROOT)/GiftRenderDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.GiftRenderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
