@@ -7,7 +7,8 @@
     CADisplayLink* displayLink;
     
     UIButton *button;
-    
+    UISwitch *overlaySwitch;
+
     NSLock *lock;
     Boolean isAppActive;
 }
@@ -27,7 +28,8 @@
         NSLog(@"Authenticate OK!");
     else
         NSLog(@"Authenticate FAIL");
-    // add blue view
+    
+    // add background view
     UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
     imageView.image = [UIImage imageNamed:@"girl"];
     imageView.contentMode = UIViewContentModeScaleAspectFill;
@@ -47,58 +49,83 @@
     self->isAppActive = true;
     self->lock = [[NSLock alloc] init];
     
-    // add button
-    button = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width / 2 - 50, self.view.bounds.size.height - 100, 100, 50)];
-    [button setTitle:@"stop" forState:UIControlStateNormal];
+    CGFloat screenWidth = self.view.bounds.size.width ;
+    CGFloat screenHeight = self.view.bounds.size.height;
+    
+    // add play button
+    button = [[UIButton alloc] initWithFrame:CGRectMake(screenWidth / 2 - 50, screenHeight - 100, 100, 50)];
+    [button setTitle:@"play" forState:UIControlStateNormal];
     [button setTitleColor:UIColor.whiteColor forState:UIControlStateNormal];
     [button setBackgroundColor:UIColor.grayColor];
     [button addTarget:self action:@selector(onButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
+    // add switch button
+    overlaySwitch = [[UISwitch alloc] init];
+    [overlaySwitch setCenter: CGPointMake(screenWidth / 2 + 30, screenHeight - 150)];
+    [self.view addSubview:overlaySwitch];
+    
+    // add switch label
+    UILabel *overlayLabel = [[UILabel alloc] initWithFrame:CGRectMake(screenWidth / 2 - 100, screenHeight - 150, 100, 50)];
+    [overlayLabel setCenter: CGPointMake(screenWidth / 2 - 30, screenHeight - 150)];
+    [overlayLabel setText:@"overlay"];
+    [overlayLabel setTextColor:UIColor.whiteColor];
+    [overlayLabel setTextAlignment:NSTextAlignmentCenter];
+    [self.view addSubview:overlayLabel];
     
     // 监听进入后台前台
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didEnterBackground) name:UIApplicationDidEnterBackgroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willEnterForeground) name:UIApplicationWillEnterForegroundNotification object:nil];
 }
 
+// click play or stop button
 - (void)onButtonClick:(UIButton *)btn {
     if ([btn.currentTitle isEqualToString:@"play"]) {
-        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"yurenjie"];
-        
-        // Create path.
-        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"image.png"];
-        
-        // Save image.
-        if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
-            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-                NSData *avatarData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://avatars.githubusercontent.com/u/45362645?v=4"]];
-                if (avatarData != NULL) {
-                    UIImage *image = [UIImage imageWithData:avatarData];
-                    
-                    // Convert to PNG
-                    [UIImagePNGRepresentation(image) writeToFile:filePath atomically:YES];
-                    
-                    dispatch_sync(dispatch_get_main_queue(), ^{
-                        if ([btn.currentTitle isEqualToString:@"stop"]) {
-                            self.animHandler.overlayPath = filePath;
-                        }
-                    });
-                }
-                
-            });
-        } else {
-            self.animHandler.overlayPath = filePath;
-        }
-
-        [self.animHandler setEffectPlayCount:1];
+        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"overlay_setting1" ofType:@"json" inDirectory:@"yurenjie"];
+        [self.animHandler setEffectPlayCount:2];
         [button setTitle:@"stop" forState:UIControlStateNormal];
+        
+        // process overlay
+        if (overlaySwitch.isOn) {
+            [self addOverlay];
+        } else {
+            self.animHandler.overlayPath = @"";
+        }
         
     } else if ([btn.currentTitle isEqualToString:@"stop"]) {
         self.animHandler.effectPath = @"";
         self.animHandler.overlayPath = @"";
         [button setTitle:@"play" forState:UIControlStateNormal];
 
+    }
+}
+
+// add overlay when render
+- (void)addOverlay {
+    // Create path.
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"image.png"];
+    
+    // Save image.
+    if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSData *avatarData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://avatars.githubusercontent.com/u/45362645?v=4"]];
+            if (avatarData != NULL) {
+                UIImage *image = [UIImage imageWithData:avatarData];
+                
+                // Convert to PNG
+                [UIImagePNGRepresentation(image) writeToFile:filePath atomically:YES];
+                
+                dispatch_sync(dispatch_get_main_queue(), ^{
+                    if ([button.currentTitle isEqualToString:@"stop"]) {
+                        self.animHandler.overlayPath = filePath;
+                    }
+                });
+            }
+            
+        });
+    } else {
+        self.animHandler.overlayPath = filePath;
     }
 }
 
@@ -118,8 +145,8 @@
 
 - (void)playEnd:(int)ret {
     NSLog(@"多次播放完成 return %d", ret);
-    [displayLink invalidate];
-    _animHandler = nil;
+//    [displayLink invalidate];
+//    _animHandler = nil;
     
     [button setTitle:@"play" forState:UIControlStateNormal];
 }
@@ -145,10 +172,12 @@
             _animHandler = [[MVYGiftRenderWrapper alloc] initWithHardwareDecoder];
         else
             _animHandler = [[MVYGiftRenderWrapper alloc] init];
-        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"yurenjie"];
-        //self.animHandler.overlayPath = [[NSBundle mainBundle] pathForResource:@"xin_19" ofType:@"png" inDirectory:@"yurenjie"];
-
-        self.animHandler.effectPlayCount = 2;
+        
+        
+//        self.animHandler.effectPath = [[NSBundle mainBundle] pathForResource:@"meta" ofType:@"json" inDirectory:@"yurenjie"];
+//        self.animHandler.overlayPath = [[NSBundle mainBundle] pathForResource:@"xin_19" ofType:@"png" inDirectory:@"yurenjie"];
+//        self.animHandler.effectPlayCount = 2;
+        
         self.animHandler.delegate = self;
     }
     
