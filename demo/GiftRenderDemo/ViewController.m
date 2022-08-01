@@ -22,6 +22,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // download overlay image
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"image.png"];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            NSData *avatarData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://avatars.githubusercontent.com/u/45362645?v=4"]];
+            if (avatarData != NULL) {
+                UIImage *image = [UIImage imageWithData:avatarData];
+                
+                // Convert to PNG
+                [UIImagePNGRepresentation(image) writeToFile:filePath atomically:YES];
+                NSLog(@"overlay image download success");
+
+            } else {
+                NSLog(@"overlay image download failure");
+            }
+        });
+        
+        NSLog(@"overlay image downloading");
+    }
+    
     int auth_ret = [MVYSDKAuthTool requestAuthEx:@"B7EkZE/J8ucIeYj9mcIytHLhKh9dOSh39hr2ALWHmiXOjj+sUxpNoEL4xlC/im9MK2aaCu6YLlikOlbOzXXEuUqjkufKAcjIVWLiLWmCx3qGjtYurdSmNzTO6NLXXeca8jK8iFOwbQe12FQqiaCb7g==" LicenseLength:112 Key:@"8bQd0ysr85WwOE2eNn3y1o9dLingLBM2jUOUZ+WnLY0CyXUsw+yrP2tn/Z9R/7bASFOmiq61l+yQUFqsv17wPg==" KeyLength:64];
 
     if (auth_ret == 0)
@@ -106,26 +127,10 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *filePath = [[paths objectAtIndex:0] stringByAppendingPathComponent:@"image.png"];
     
-    // Save image.
-    if (![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            NSData *avatarData = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"https://avatars.githubusercontent.com/u/45362645?v=4"]];
-            if (avatarData != NULL) {
-                UIImage *image = [UIImage imageWithData:avatarData];
-                
-                // Convert to PNG
-                [UIImagePNGRepresentation(image) writeToFile:filePath atomically:YES];
-                
-                dispatch_sync(dispatch_get_main_queue(), ^{
-                    if ([button.currentTitle isEqualToString:@"stop"]) {
-                        self.animHandler.overlayPath = filePath;
-                    }
-                });
-            }
-            
-        });
-    } else {
+    if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
         self.animHandler.overlayPath = filePath;
+    } else {
+        NSLog(@"overlay image download failure");
     }
 }
 
