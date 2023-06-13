@@ -1,0 +1,11 @@
+{
+    "format": "1",
+    "name": "niuqichongtian",
+    "nodes": [
+        {
+            "type": "3dModel",
+            "bg": "113426.vwa",
+            "fps": 15
+        }
+    ]
+}

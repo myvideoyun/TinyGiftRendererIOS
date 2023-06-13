@@ -1,0 +1,11 @@
+{
+    "format": "1",
+    "name": "gaobaixinfong",
+    "nodes": [
+        {
+            "type": "3dModel",
+            "bg": "113427.vwa",
+            "fps": 15
+        }
+    ]
+}

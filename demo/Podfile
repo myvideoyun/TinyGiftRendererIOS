@@ -3,9 +3,11 @@ platform :ios, '9.0'
 
 target 'GiftRenderDemo' do
   # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
+  use_frameworks! :linkage => :static
 
-  # pod 'GiftRendererKit', :podspec => '../GiftRenderKit/GiftRendererKit.podspec'
-  pod 'GiftRendererKit',  '~> 1.0.09'
+  pod 'GiftRendererKit', :path => '..'
+  # pod 'GiftRendererKit',  '~> 1.0.09'
 
+  pod 'FFmpeg', :path => '..'
+  pod 'OpenSSL', :path => '..'
 end

@@ -1,0 +1,12 @@
+{
+  "format" : "1",
+  "name":"ainichengbao",
+  "nodes" : [
+    {
+	  "type":"3dModel",
+      "bg":"ainichengbao_v1.vwa",
+      "fps":15,
+      "loop":0
+    }
+  ]
+}

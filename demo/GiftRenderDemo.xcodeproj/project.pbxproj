@@ -50,6 +50,9 @@
 		23C8D2BC24DFAF3300179F86 /* aixinmeigui_v1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = aixinmeigui_v1; sourceTree = "<group>"; };
 		321D670972425AEB52E21180 /* Pods-GiftRenderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftRenderDemo.release.xcconfig"; path = "Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiftRenderDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D363F7E32A38A4EB004CEF99 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D363F7E52A38A4F6004CEF99 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		D363F7E72A38A529004CEF99 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D3AE5C661FF34C7C004D476B /* GiftRenderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftRenderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3AE5C691FF34C7D004D476B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3AE5C6A1FF34C7D004D476B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -123,6 +126,9 @@
 		D3AE5C9F1FF372C1004D476B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D363F7E72A38A529004CEF99 /* AudioToolbox.framework */,
+				D363F7E52A38A4F6004CEF99 /* CoreAudioKit.framework */,
+				D363F7E32A38A4EB004CEF99 /* CoreAudio.framework */,
 				D3AE5CA41FF372E5004D476B /* libz.tbd */,
 				D3AE5CA01FF372C1004D476B /* libiconv.tbd */,
 				5B49CDD9C0CD355340C00034 /* Pods_GiftRenderDemo.framework */,
@@ -142,7 +148,6 @@
 				D3AE5C631FF34C7C004D476B /* Frameworks */,
 				D3AE5C641FF34C7C004D476B /* Resources */,
 				D3AE5C9E1FF372B8004D476B /* Embed Frameworks */,
-				7E8B75EC39DA2F4D3B325993 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 				239501C221C49863006FF051 /* PBXBuildRule */,
@@ -201,24 +206,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7E8B75EC39DA2F4D3B325993 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GiftRendererKit/GiftRendererKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GiftRendererKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GiftRenderDemo/Pods-GiftRenderDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		ADABDA80712D398E55C6492B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -385,7 +372,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/GiftRendererKit/GiftRendererKit.framework/Headers\"",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/GiftRenderDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.GiftRenderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -402,7 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XF7HNQXZKK;
 				INFOPLIST_FILE = "$(SRCROOT)/GiftRenderDemo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.myvideoyun.GiftRenderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
