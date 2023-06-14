@@ -3,7 +3,6 @@
 #import "GiftRenderKit.h"
 
 //#include "openssl"
-
 @interface ViewController () <GLKViewDelegate, AYAnimHandlerDelegate>{
     GLKView *glkView;
     CADisplayLink* displayLink;
