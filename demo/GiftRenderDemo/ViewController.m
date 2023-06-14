@@ -89,7 +89,7 @@
     [lock unlock];
 }
 
-- (void)playEnd {
+- (void)playEnd:(int)ret {
     NSLog(@"多次播放完成");
     [displayLink invalidate];
     _animHandler = nil;
